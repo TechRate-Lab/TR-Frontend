@@ -23,3 +23,4 @@ Plataforma web voltada para reunir informações relevantes sobre empresas da á
 ### Para iniciar o projeto, utilize o comando
 
 `npm run dev`
+
