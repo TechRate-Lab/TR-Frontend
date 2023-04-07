@@ -1,4 +1,4 @@
-## TechRate - Frontend
+## TechRate - Frontend:
 
 ## Sobre o projeto:
 
