@@ -1,13 +1,16 @@
-import './App.css'
+import "./App.css";
+import { ThemeProvider } from "styled-components";
+import { themes } from "./themes/themes";
+import Header from "./components/Header/Header";
 
 function App() {
-
   return (
-    <div className="App">
-      <h1>Tech Rate</h1>
-    <img src="src/assets/TechLogo.jpeg" alt="" />
-    </div>
-  )
+    <ThemeProvider theme={themes}>
+      <div className="App">
+        <Header />
+      </div>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
