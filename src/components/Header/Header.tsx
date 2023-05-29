@@ -1,9 +1,13 @@
-import { StyledHeader } from "./style"
+import { StyledHeader, StyledLogo, Logo } from "./style"
 
-export default function Header(){
+const Header: React.FC = () => {
     return (
         <StyledHeader>
-        <h1>Isso é um teste do tema</h1>
+            <StyledLogo>
+                <Logo src='src/assets/Logo.png'/>
+            </StyledLogo>
         </StyledHeader>
     )
 }
+
+export default Header
