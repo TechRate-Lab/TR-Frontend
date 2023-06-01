@@ -2,13 +2,11 @@ import { useContext } from "react";
 import ButtonGlobal from "../Buttons/ButtonGlobal";
 import { StyledHeader, StyledLogo, Logo } from "./style";
 import { ThemeContext } from "styled-components";
-import { theme } from "../../themes/themes";
 
 const Header: React.FC = () => {
+  const theme = useContext(ThemeContext);
 
-    const themes = theme
-
-return (
+  return (
     <StyledHeader>
       <StyledLogo>
         <Logo src="src/assets/Logo.png" />
