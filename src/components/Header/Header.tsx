@@ -14,6 +14,11 @@ const Header: React.FC = () => {
       <ButtonGlobal
         hoverColor={theme.colors.primary.dark}
         backgroundColor={theme.colors.primary.dark_hover}
+        children={"Teste"}
+        fontWeight={theme.buttons.large.fontWeight}
+        fontSize={theme.buttons.large.fontSize}
+        heigth={theme.buttons.large.height}
+        spacing={theme.buttons.large.spacing}
       />
     </StyledHeader>
   );

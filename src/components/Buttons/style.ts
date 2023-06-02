@@ -7,9 +7,11 @@ export const ButtonEnableSmall = styled.button<IButtonProps>`
   &:hover {
     background-color: ${(props) => props.hoverColor};
   }
-  width: 79px;
-  height: 42px;
+  font-size: ${(props) => props.fontSize};
+  font-weight: ${(props) => props.fontWeight};
+  height: ${(props) => props.heigth};
+  letter-spacing: ${(props) => props.spacing};
   padding: 10px 20px;
   border-radius: 8px;
-  border:none;
+  border: none;
 `;

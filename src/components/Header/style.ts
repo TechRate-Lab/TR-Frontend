@@ -1,21 +1,15 @@
 import styled from "styled-components";
 
+export const StyledHeader = styled.div`
+  display: flex;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+`;
 
-export const StyledHeader = styled.div 
+export const StyledLogo = styled.div`
+  width: 160px;
+  height: 50px;
+`;
 
-`
-display:flex;
-width:100%;
-height:250px;
-padding:10px;
-`
-
-export const StyledLogo = styled.div
-`
-width:160px;
-height:50px
-`
-
-export const Logo = styled.img ``
-
-
+export const Logo = styled.img``;
