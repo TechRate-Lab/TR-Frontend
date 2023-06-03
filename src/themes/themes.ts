@@ -96,7 +96,7 @@ export const theme = {
     },
     mobile: {
       headline1: {
-        fontWeight: "bold",
+        fontWeight: "bold", 
         fontSize: "40px",
         height: "48px",
         spacing: "-2%",
@@ -179,8 +179,10 @@ export const theme = {
     large: {
       fontWeight: "medium",
       fontSize: "20px",
-      height: "100%",
+      height: "72px%",
       spacing: "0px",
+      padding:"24px 32px",
+      width:"329px"
     },
     medium: {
       fontWeight: "medium",

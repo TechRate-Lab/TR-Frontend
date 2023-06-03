@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.div`
   display: flex;
   width: 100%;
-  height: 250px;
+  height: 60px;
   padding: 10px;
 `;
 
@@ -12,4 +12,9 @@ export const StyledLogo = styled.div`
   height: 50px;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img
+
+`
+
+
+`;
