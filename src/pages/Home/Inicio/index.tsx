@@ -13,6 +13,7 @@ import {
   StarsUp,
 } from "./style";
 import ButtonGlobal from "../../../components/Buttons/ButtonGlobal";
+import heroImage from "../../../assets/heroSection.png"
 
 const Inicio: React.FC = () => {
   const theme = useContext(ThemeContext);
@@ -40,7 +41,7 @@ const Inicio: React.FC = () => {
       <HeroSection>
         <RetangularTop />
         <RetangularBottom />
-        <HeroImage src="src/assets/heroSection.png" />
+        <HeroImage src={heroImage} />
         <StarsUp />
         <StarsDown />
       </HeroSection>
