@@ -47,7 +47,7 @@ const Sobre: React.FC = () => {
         </SobreBoxMain>
         <BoxSecondary />
         <BoxImage
-          src={teamImage}
+          src={teamImage} 
           alt="image"
         />
       </SobreSection>
