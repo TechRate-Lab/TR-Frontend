@@ -10,6 +10,8 @@ const ButtonGlobal: React.FC<IButtonProps> = ({
   fontSize,
   heigth,
   spacing,
+  padding,
+  width
 }) => {
   return (
     <ButtonEnableSmall
@@ -19,6 +21,9 @@ const ButtonGlobal: React.FC<IButtonProps> = ({
       fontSize={fontSize}
       heigth={heigth}
       spacing={spacing}
+      padding={padding}
+      color={color}
+      width={width}
     >
       {children}
     </ButtonEnableSmall>

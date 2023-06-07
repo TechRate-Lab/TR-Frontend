@@ -76,7 +76,7 @@ export const theme = {
         spacing: "0px",
       },
       subtitle1: {
-        fontWeight: "semiBold",
+        fontWeight: "bold",
         fontSize: "18px",
         height: "150%",
         spacing: "0px",
@@ -89,7 +89,7 @@ export const theme = {
       },
       body2: {
         fontWeight: "regular",
-        fontSize: "18px",
+        fontSize: "16px",
         height: "150%",
         spacing: "0px",
       },
@@ -179,14 +179,18 @@ export const theme = {
     large: {
       fontWeight: "medium",
       fontSize: "20px",
-      height: "100%",
+      height: "72px",
       spacing: "0px",
+      padding: "24px 32px",
+      width: "329px",
     },
     medium: {
       fontWeight: "medium",
       fontSize: "16px",
-      height: "100%",
       spacing: "0px",
+      height: "100%",
+      padding: "12px 18px",
+      width: "200px",
     },
     small: {
       fontWeight: "medium",

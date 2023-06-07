@@ -11,7 +11,10 @@ export const ButtonEnableSmall = styled.button<IButtonProps>`
   font-weight: ${(props) => props.fontWeight};
   height: ${(props) => props.heigth};
   letter-spacing: ${(props) => props.spacing};
-  padding: 10px 20px;
+  color:${(props) => props.color};
+  width:${(props) => props.width};
+  padding: ${(props) => props.padding};
   border-radius: 8px;
   border: none;
+  cursor:pointer;
 `;
