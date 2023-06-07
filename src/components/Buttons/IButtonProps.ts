@@ -7,4 +7,6 @@ export interface IButtonProps {
   fontSize: string;
   heigth: string;
   spacing: string;
+  padding:string;
+  width:string;
 }
