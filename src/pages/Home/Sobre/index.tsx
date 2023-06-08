@@ -10,6 +10,8 @@ import {
   SobreSection,
 } from "./style";
 
+import teamImage from '../../../assets/successful-happy-business-team.png'
+
 const Sobre: React.FC = () => {
   return (
     <>
@@ -45,7 +47,7 @@ const Sobre: React.FC = () => {
         </SobreBoxMain>
         <BoxSecondary />
         <BoxImage
-          src="src/assets/successful-happy-business-team.png"
+          src={teamImage} 
           alt="image"
         />
       </SobreSection>
