@@ -1,3 +1,4 @@
+import { Footer } from "../../components/Footer";
 import Header from "../../components/Header/Header";
 import Avaliar from "./Avaliar";
 import Inicio from "./Inicio";
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <Sobre />
       <Reputacao />
       <Avaliar />
+      <Footer/>
     </>
   );
 };
