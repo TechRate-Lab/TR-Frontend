@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import stars from "../../../assets/interactive-rating-UI-element.png";
+import background from '../../../assets/homeBackground.png'
 export const MainSection = styled.section`
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,7 @@ export const MainSection = styled.section`
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-image: url("src/assets/homeBackground.png");
+    background-image:url(${background});
     background-size: cover;
     opacity: 0.4;
   }
