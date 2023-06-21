@@ -6,7 +6,7 @@ export const SobreSection = styled.section`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 818px;
 `;
 export const SobreBoxMain = styled.div`
   display: flex;
@@ -17,7 +17,6 @@ export const SobreBoxMain = styled.div`
 
   position: absolute;
   width: 65%;
-  height: 818px;
   left: 0px;
   top: 0px;
 
@@ -56,7 +55,7 @@ export const BoxImage = styled.img`
     width: 350px;
     height: 297px;
     left: 550px;
-    top: calc(50% - 110.12px / 2 + 0.06px);
+    top: calc(50% - 350.12px / 2 + 0.06px);
   }
 `;
 
