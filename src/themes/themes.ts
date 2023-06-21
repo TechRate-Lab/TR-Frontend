@@ -199,4 +199,9 @@ export const theme = {
       spacing: "0px",
     },
   },
+  breakpoints: {
+    mobile: "576px",
+    tablet: "768px",
+    desktop: "992px",
+  },
 };
