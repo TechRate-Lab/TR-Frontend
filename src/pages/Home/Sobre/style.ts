@@ -6,7 +6,7 @@ export const SobreSection = styled.section`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 818px;
 `;
 export const SobreBoxMain = styled.div`
   display: flex;
@@ -17,12 +17,15 @@ export const SobreBoxMain = styled.div`
 
   position: absolute;
   width: 65%;
-  height: 818px;
   left: 0px;
   top: 0px;
 
   background: ${(props) => props.theme.colors.secondary.normal};
   border-radius: 0px 0px 100px 0px;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 75%;
+    padding: 50px 30px;
+  }
 `;
 
 export const BoxSecondary = styled.div`
@@ -33,6 +36,10 @@ export const BoxSecondary = styled.div`
   top: 0;
   background: ${(props) => props.theme.colors.primary.normal};
   border-radius: 0px 0px 100px 0px;
+
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 25%;
+  }
 `;
 
 export const BoxImage = styled.img`
@@ -43,6 +50,13 @@ export const BoxImage = styled.img`
   top: calc(50% - 610.12px / 2 + 0.06px);
   background: grey;
   border-radius: 100px 8px;
+
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 350px;
+    height: 297px;
+    left: 550px;
+    top: calc(50% - 350.12px / 2 + 0.06px);
+  }
 `;
 
 export const SobreBoxMainTitle = styled.h1`

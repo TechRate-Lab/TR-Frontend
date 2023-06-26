@@ -5,15 +5,11 @@ import {
   CallSubTitle,
   CallTitle,
   HeroImage,
-  HeroSection,
   MainSection,
-  RetangularBottom,
-  RetangularTop,
-  StarsDown,
-  StarsUp,
+ 
 } from "./style";
 import ButtonGlobal from "../../../components/Buttons/ButtonGlobal";
-import heroImage from "../../../assets/heroSection.png"
+import heroImage from "../../../assets/newHeroSection.png";
 
 const Inicio: React.FC = () => {
   const theme = useContext(ThemeContext);
@@ -38,13 +34,7 @@ const Inicio: React.FC = () => {
           width={theme.buttons.large.width}
         />
       </Call>
-      <HeroSection>
-        <RetangularTop />
-        <RetangularBottom />
         <HeroImage src={heroImage} />
-        <StarsUp />
-        <StarsDown />
-      </HeroSection>
     </MainSection>
   );
 };

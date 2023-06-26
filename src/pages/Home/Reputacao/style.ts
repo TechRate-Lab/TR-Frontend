@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 export const ReputacaoSection = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 0 100px;
   width: 100%;
-  height: 90vh;
+  height:790px;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    padding:30px 5px;
+    height: 700px;
+  }
 `;
 
 export const ReputacaoCards = styled.div`
@@ -14,9 +18,11 @@ export const ReputacaoCards = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+
 `;
 
 export const ReputacaoCard = styled.div`
+
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -31,9 +37,14 @@ export const ReputacaoCard = styled.div`
   border-radius: 8px;
   &.melhores {
     background: #009c4f;
+    
   }
   &.piores {
     background: ${(props) => props.theme.colors.grey.normal};
+  }
+
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 470px;
   }
 `;
 
@@ -61,6 +72,7 @@ export const ReputacaoCardListaEmpresas = styled.div`
   gap: 15px;
 `;
 export const ReputacaoCardEmpresa = styled.div`
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,6 +105,11 @@ export const ReputacaoCardEmpresa = styled.div`
     color: ${(props) => props.theme.colors.grey.darker};
   }
   cursor: pointer;
+
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 56px;
+   
+  }
 `;
 export const ReputacaoText = styled.div`
   width: 512px;

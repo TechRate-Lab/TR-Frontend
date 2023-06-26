@@ -7,6 +7,9 @@ export const AvaliarSection = styled.section`
   width: 100%;
   height: 50vh;
   padding: 0 100px;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    padding: 20px;
+  }
 `;
 
 export const AvaliarCard = styled.div`
@@ -35,6 +38,9 @@ export const AvaliarCard = styled.div`
     background-image: url("src/assets/homeBackground-branco.png");
     background-size: cover;
     opacity: 0.3;
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 388px;
   }
 `;
 
