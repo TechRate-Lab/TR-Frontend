@@ -7,9 +7,11 @@ export const ReputacaoSection = styled.section`
   padding: 0 100px;
   width: 100%;
   height: 790px;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  margin-top:70px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 30px 5px;
     height: 600px;
+    margin-top:0px;
   }
 `;
 
@@ -18,7 +20,7 @@ export const ReputacaoCards = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     gap: 5px;
   }
 `;
@@ -43,7 +45,7 @@ export const ReputacaoCard = styled.div`
     background: ${(props) => props.theme.colors.grey.normal};
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 460px;
     width: 255px;
     gap: 0px;
@@ -108,7 +110,7 @@ export const ReputacaoCardEmpresa = styled.div`
   }
   cursor: pointer;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 56px;
     width:70%;
 
@@ -128,7 +130,7 @@ export const ReputacaoText = styled.div`
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width:100%;
     padding:10px;
   }
@@ -145,7 +147,7 @@ export const ReputacaoTextTitle = styled.h1`
     props.theme.typography.desktop.headline2.spacing};
 
   color: ${(props) => props.theme.colors.secondary.normal};
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: ${(props) => props.theme.typography.desktop.headline4.fontSize};
 
   }
@@ -162,7 +164,7 @@ export const ReputacaoTextSubTitle = styled.p`
     props.theme.typography.desktop.subtitle1.spacing};
   color: ${(props) => props.theme.colors.grey.darker};
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
 
   }
