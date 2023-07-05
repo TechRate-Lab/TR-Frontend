@@ -6,10 +6,12 @@ export const ReputacaoSection = styled.section`
   align-items: flex-start;
   padding: 0 100px;
   width: 100%;
-  height:790px;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    padding:30px 5px;
-    height: 700px;
+  height: 790px;
+  margin-top:70px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    padding: 30px 5px;
+    height: 600px;
+    margin-top:0px;
   }
 `;
 
@@ -18,11 +20,12 @@ export const ReputacaoCards = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
-
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    gap: 5px;
+  }
 `;
 
 export const ReputacaoCard = styled.div`
-
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -37,14 +40,16 @@ export const ReputacaoCard = styled.div`
   border-radius: 8px;
   &.melhores {
     background: #009c4f;
-    
   }
   &.piores {
     background: ${(props) => props.theme.colors.grey.normal};
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    height: 470px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 460px;
+    width: 255px;
+    gap: 0px;
+    padding:10px;
   }
 `;
 
@@ -72,7 +77,6 @@ export const ReputacaoCardListaEmpresas = styled.div`
   gap: 15px;
 `;
 export const ReputacaoCardEmpresa = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -106,9 +110,19 @@ export const ReputacaoCardEmpresa = styled.div`
   }
   cursor: pointer;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 56px;
-   
+    width:70%;
+
+    p{
+      font-size: ${(props) => props.theme.typography.desktop.body2.fontSize};
+      letter-spacing: 0px;
+    }
+
+    img{
+      width:34px;
+      height:34px;
+    }
   }
 `;
 export const ReputacaoText = styled.div`
@@ -116,6 +130,10 @@ export const ReputacaoText = styled.div`
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width:100%;
+    padding:10px;
+  }
 `;
 
 export const ReputacaoTextTitle = styled.h1`
@@ -129,6 +147,10 @@ export const ReputacaoTextTitle = styled.h1`
     props.theme.typography.desktop.headline2.spacing};
 
   color: ${(props) => props.theme.colors.secondary.normal};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.typography.desktop.headline4.fontSize};
+
+  }
 `;
 
 export const ReputacaoTextSubTitle = styled.p`
@@ -141,4 +163,9 @@ export const ReputacaoTextSubTitle = styled.p`
   letter-spacing: ${(props) =>
     props.theme.typography.desktop.subtitle1.spacing};
   color: ${(props) => props.theme.colors.grey.darker};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
+
+  }
 `;

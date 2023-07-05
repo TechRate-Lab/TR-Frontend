@@ -22,6 +22,10 @@ export const MainSection = styled.section`
     background-size: cover;
     opacity: 0.4;
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    gap: 20px;
+  }
 `;
 
 export const Call = styled.div`
@@ -52,12 +56,8 @@ export const HeroImage = styled.img`
   width: 614px;
   height: 400px;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 400px;
     height: 238px;
   }
-
-  
-
-
 `;
