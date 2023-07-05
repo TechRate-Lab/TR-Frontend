@@ -81,6 +81,12 @@ export const theme = {
         height: "150%",
         spacing: "0px",
       },
+      subtitle2: {
+        fontWeight: "bold",
+        fontSize: "14px",
+        height: "150%",
+        spacing: "0px",
+      },
       body1: {
         fontWeight: "regular",
         fontSize: "18px",

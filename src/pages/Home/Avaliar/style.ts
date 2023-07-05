@@ -8,7 +8,7 @@ export const AvaliarSection = styled.section`
   height: 50vh;
   padding: 0 100px;
   @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    padding: 20px;
+    padding: 0px;
   }
 `;
 
@@ -41,6 +41,7 @@ export const AvaliarCard = styled.div`
   }
   @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 388px;
+    padding:0px 50px;
   }
 `;
 
