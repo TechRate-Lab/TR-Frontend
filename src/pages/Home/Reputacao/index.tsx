@@ -19,7 +19,7 @@ import empresa5 from "../../../assets/logo_magazine-luiza.png";
 const Reputacao: React.FC = () => {
   return (
     <>
-      <ReputacaoSection>
+      <ReputacaoSection> 
         <ReputacaoCards>
           <ReputacaoCard className="melhores">
             <ReputacaoCardTitle>

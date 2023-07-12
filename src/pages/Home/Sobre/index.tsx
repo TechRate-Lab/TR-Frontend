@@ -42,12 +42,12 @@ const Sobre: React.FC = () => {
               Vamos juntos transformar o mercado tech? Estamos aqui para
               ouvi-los.
             </SobreBoxMainParagraph>
-            <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
           </SobreBoxMainText>
+            <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
         </SobreBoxMain>
         <BoxSecondary />
         <BoxImage
-          src={teamImage} 
+          src={teamImage}  
           alt="image"
         />
       </SobreSection>

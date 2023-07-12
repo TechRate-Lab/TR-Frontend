@@ -2,11 +2,17 @@ import styled from "styled-components";
 
 export const ReputacaoSection = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 0 100px;
   width: 100%;
-  height: 90vh;
+  height: 790px;
+  margin-top:70px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    padding: 30px 5px;
+    height: 600px;
+    margin-top:0px;
+  }
 `;
 
 export const ReputacaoCards = styled.div`
@@ -14,6 +20,9 @@ export const ReputacaoCards = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    gap: 5px;
+  }
 `;
 
 export const ReputacaoCard = styled.div`
@@ -34,6 +43,13 @@ export const ReputacaoCard = styled.div`
   }
   &.piores {
     background: ${(props) => props.theme.colors.grey.normal};
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 460px;
+    width: 255px;
+    gap: 0px;
+    padding:10px;
   }
 `;
 
@@ -93,12 +109,31 @@ export const ReputacaoCardEmpresa = styled.div`
     color: ${(props) => props.theme.colors.grey.darker};
   }
   cursor: pointer;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 56px;
+    width:70%;
+
+    p{
+      font-size: ${(props) => props.theme.typography.desktop.body2.fontSize};
+      letter-spacing: 0px;
+    }
+
+    img{
+      width:34px;
+      height:34px;
+    }
+  }
 `;
 export const ReputacaoText = styled.div`
   width: 512px;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width:100%;
+    padding:10px;
+  }
 `;
 
 export const ReputacaoTextTitle = styled.h1`
@@ -112,6 +147,10 @@ export const ReputacaoTextTitle = styled.h1`
     props.theme.typography.desktop.headline2.spacing};
 
   color: ${(props) => props.theme.colors.secondary.normal};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.typography.desktop.headline4.fontSize};
+
+  }
 `;
 
 export const ReputacaoTextSubTitle = styled.p`
@@ -124,4 +163,9 @@ export const ReputacaoTextSubTitle = styled.p`
   letter-spacing: ${(props) =>
     props.theme.typography.desktop.subtitle1.spacing};
   color: ${(props) => props.theme.colors.grey.darker};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
+
+  }
 `;

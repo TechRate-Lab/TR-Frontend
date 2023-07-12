@@ -8,6 +8,13 @@ justify-content:space-around;
 width:100%;
 height:120px;
 padding:20px 0px;
+margin-top:60px;
+@media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  margin-top:50px;
+  height:90px;
+}
+
+
 
 `
 
