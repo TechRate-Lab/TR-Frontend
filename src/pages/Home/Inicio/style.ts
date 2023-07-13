@@ -5,46 +5,18 @@ export const MainSection = styled.section`
   display: grid;
   place-items: center;
   justify-content: flex-start;
-  position: relative;
-  padding: 0 112px;
-  width: 100%;
-  height: 36.5vh;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url(${background});
-    background-size: cover;
-    opacity: 0.4;
-  }
-
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  height: 100%;
+  padding: 40px 24px;
+  
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 100%;
     padding: 40px 24px;
-
-    &::after {
-      width: 1150px;
-      height: 380px;
-      transform: translate(-12%, -12%);
-      opacity: 0.5;
-    }
   }
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    height: 100%;
-    padding: 40px 24px;
-    
-    &::after {
-      width: 780px;
-      height: 350px;
-      transform: translate(-23%, -15%);
-      opacity: 0.7;
-    }
+  @media screen and (min-width:${(props) => props.theme.breakpoints.desktop}) {
+    padding: 0 112px;
+    width: 100%;
+    height: 36.5vh;
   }
 `
 
@@ -54,19 +26,17 @@ export const Call = styled.div`
   justify-content: Center;
   gap: 20px;
   
-  @media screen and (max-width: ${props => props.theme.breakpoints.tablet}) {
+  @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     width: 386px;
   }
 `
 
 export const CallTitle = styled.span`
+  font-size: ${props => props.theme.typography.mobile.headline1.fontSize};
   color: ${(props) => props.theme.colors.secondary.normal};
-  font-size: ${(props) => props.theme.typography.desktop.headline1.fontSize};
-  line-height: ${(props) => props.theme.typography.desktop.headline1.height};
-  font-weight: ${(props) =>
-    props.theme.typography.desktop.headline1.fontWeight};
-
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  font-weight: ${(props) => props.theme.typography.mobile.headline1.fontWeight};
+  
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -75,44 +45,55 @@ export const CallTitle = styled.span`
     padding-top: 16px;
   }
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    font-size: ${props => props.theme.typography.mobile.headline1.fontSize};
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: ${(props) => props.theme.typography.desktop.headline1.fontSize};
+    line-height: ${(props) => props.theme.typography.desktop.headline1.height};
   }
 `
 
 export const CallSubTitle = styled.span`
-  width: 100%;
-  color: ${(props) => props.theme.colors.grey.darker};
-  font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
-  line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
-  font-weight: ${(props) =>
-    props.theme.typography.desktop.subtitle1.fontWeight};
+  max-width: 384px;
+  font-weight: ${props => props.theme.typography.mobile.headline7.fontWeight};
+  font-size: ${props => props.theme.typography.mobile.headline7.fontSize};
+  line-height: ${props => props.theme.typography.mobile.headline7.lineHeight};
+  
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 110%;
     font-weight: ${props => props.theme.typography.tablet.headline1.fontWeight};
     font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
     line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
   }
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     width: 100%;
-    font-weight: ${props => props.theme.typography.tablet.headline1.fontWeight};
-    font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
-    line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
+    color: ${(props) => props.theme.colors.grey.darker};
+    font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
+    line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
+    font-weight: ${(props) =>
+            props.theme.typography.desktop.subtitle1.fontWeight};
   }
 `
 
 export const HeroImage = styled.img`
-  width: 614px;
-  height: 400px;
-
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  display: none;
+  
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    display: block;
     width: 400px;
     height: 238px;
   }
+  
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    display: none;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    width: 614px;
+    height: 400px;
   }
+`
+
+export const Hero = styled.div`
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
 `

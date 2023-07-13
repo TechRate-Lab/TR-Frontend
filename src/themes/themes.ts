@@ -144,6 +144,11 @@ export const theme = {
         height: '22px',
         spacing: '0px'
       },
+      headline7: {
+        fontWeight: 'regular',
+        fontSize: '16px',
+        lineHeight: '150%'
+      },
       subtitle1: {
         fontWeight: 'semiBold',
         fontSize: '14px',
