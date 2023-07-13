@@ -24,9 +24,7 @@ const Inicio: React.FC = () => {
             <CallSubTitle>
              Aqui você descobre se o match com aquela empresa é real!
             </CallSubTitle>
-            <div style={{ width: '222px' }}>
-              <AvaliarEmpresa/>
-            </div>
+            <AvaliarEmpresa/>
             {/* <ButtonGlobal */}
             {/*   hoverColor={theme.colors.secondary.dark} */}
             {/*   backgroundColor={theme.colors.secondary.normal} */}

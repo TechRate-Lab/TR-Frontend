@@ -24,7 +24,15 @@ export const MainSection = styled.section`
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    padding: 0 24px;
+    height: 100%;
+    padding: 40px 24px;
+
+    &::after {
+      width: 1150px;
+      height: 380px;
+      transform: translate(-12%, -12%);
+      opacity: 0.5;
+    }
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
@@ -57,6 +65,15 @@ export const CallTitle = styled.span`
   line-height: ${(props) => props.theme.typography.desktop.headline1.height};
   font-weight: ${(props) =>
     props.theme.typography.desktop.headline1.fontWeight};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.96px;
+    padding-top: 16px;
+  }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     font-size: ${props => props.theme.typography.mobile.headline1.fontSize};
