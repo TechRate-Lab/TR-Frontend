@@ -26,6 +26,18 @@ export const MainSection = styled.section`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 0 24px;
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    height: 100%;
+    padding: 40px 24px;
+    
+    &::after {
+      width: 780px;
+      height: 350px;
+      transform: translate(-23%, -15%);
+      opacity: 0.7;
+    }
+  }
 `
 
 export const Call = styled.div`
@@ -45,6 +57,10 @@ export const CallTitle = styled.span`
   line-height: ${(props) => props.theme.typography.desktop.headline1.height};
   font-weight: ${(props) =>
     props.theme.typography.desktop.headline1.fontWeight};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    font-size: ${props => props.theme.typography.mobile.headline1.fontSize};
+  }
 `
 
 export const CallSubTitle = styled.span`
@@ -61,6 +77,13 @@ export const CallSubTitle = styled.span`
     font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
     line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+    font-weight: ${props => props.theme.typography.tablet.headline1.fontWeight};
+    font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
+    line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
+  }
 `
 
 export const HeroImage = styled.img`
@@ -70,5 +93,9 @@ export const HeroImage = styled.img`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 400px;
     height: 238px;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
   }
 `
