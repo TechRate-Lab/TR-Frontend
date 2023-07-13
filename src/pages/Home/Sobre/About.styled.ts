@@ -1,64 +1,76 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SobreSection = styled.section`
   position: relative;
-  width: 100%;
-  height: 818px;
-`;
-export const SobreBoxMain = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 80px 112px;
-  gap: 64px;
+`
 
+export const OverlayBg = styled.div`
+  background-color: #6AEDAB;
   position: absolute;
-  width: 65%;
-  left: 0px;
-  top: 0px;
+  top: 0;
+  width: 100%;
+  border-radius: 0px 0px 100px 0px;
+  height: 700px;
+  z-index: -1;
+`
 
+export const SobreBoxMain = styled.div`
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
   background: ${(props) => props.theme.colors.secondary.normal};
   border-radius: 0px 0px 100px 0px;
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 75%;
-    padding: 40px 10px;
   }
-`;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    padding-left: 112px;
+  }
+`
+
+export const SobreBoxMainText = styled.div`
+  max-width: 388px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    max-width: 400px;
+  }
+`
 
 export const BoxSecondary = styled.div`
-  position: absolute;
-  width: 35%;
-  height: 700px;
-  right: 0;
-  top: 0;
-  background: ${(props) => props.theme.colors.primary.normal};
-  border-radius: 0px 0px 100px 0px;
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    width: 25%;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    
   }
-`;
+`
 
 export const BoxImage = styled.img`
   position: absolute;
-  width: 600px;
-  height: 510.12px;
-  left: 650px;
-  top: calc(50% - 610.12px / 2 + 0.06px);
-  background: grey;
-  border-radius: 100px 8px;
 
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    width: 250px;
-    height: 217px;
-    top: calc(45% - 350.12px / 2 + 0.06px);
-    left:505px;
+  display: none;
+ 
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 350px;
+    display: block;
+    right: 0;
+    top: 30%;
+    margin-right: 20px;
   }
-`;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    width: 600px;
+    display: block;
+    right: 0;
+    top: 20%;
+    margin-right: 290px;
+  }
+`
 
 export const SobreBoxMainTitle = styled.h1`
   color: #ffffff;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: ${(props) =>
@@ -67,17 +79,9 @@ export const SobreBoxMainTitle = styled.h1`
   line-height: ${(props) => props.theme.typography.desktop.headline2.height};
   letter-spacing: ${(props) =>
     props.theme.typography.desktop.headline2.spacing};
-`;
-
-export const SobreBoxMainText = styled.p`
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
+`
 
 export const SobreBoxMainParagraph = styled.p`
-  width: 500px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: ${(props) => props.theme.typography.desktop.body2.fontWeight};
@@ -85,7 +89,11 @@ export const SobreBoxMainParagraph = styled.p`
   line-height: ${(props) => props.theme.typography.desktop.body2.height};
   letter-spacing: ${(props) => props.theme.typography.desktop.body2.spacing};
   color: #ffffff;
-`;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    
+  }
+`
 
 export const SobreBoxMainButton = styled.button`
   font-weight: medium;
@@ -104,4 +112,4 @@ export const SobreBoxMainButton = styled.button`
   &:hover {
     background-color: ${(props) => props.theme.colors.secondary.dark};
   }
-`;
+`

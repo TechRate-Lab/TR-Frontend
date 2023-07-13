@@ -7,7 +7,7 @@ import {
   HeroImage,
   MainSection
 
-} from './style'
+} from './HeroSection.styled'
 import ButtonGlobal from '../../../components/Buttons/ButtonGlobal'
 import heroImage from '../../../assets/newHeroSection.png'
 import { Flex } from '../../../components/styles/Flex.styled'
