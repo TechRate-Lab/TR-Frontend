@@ -1,14 +1,14 @@
-import styled from "styled-components";
-import background from "../../../assets/homeBackground.png";
+import styled from 'styled-components'
+import background from '../../../assets/homeBackground.png'
 
 export const MainSection = styled.section`
-  display: flex;
-  justify-content: space-around;
+  display: grid;
   place-items: center;
-  padding: 0 100px;
+  justify-content: flex-start;
   position: relative;
+  padding: 0 112px;
   width: 100%;
-  height: 80vh;
+  height: 36.5vh;
 
   &::after {
     content: "";
@@ -24,16 +24,20 @@ export const MainSection = styled.section`
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    gap: 20px;
+    padding: 0 24px;
   }
-`;
+`
 
 export const Call = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: Center;
   gap: 20px;
-`;
+  
+  @media screen and (max-width: ${props => props.theme.breakpoints.tablet}) {
+    width: 386px;
+  }
+`
 
 export const CallTitle = styled.span`
   color: ${(props) => props.theme.colors.secondary.normal};
@@ -41,7 +45,7 @@ export const CallTitle = styled.span`
   line-height: ${(props) => props.theme.typography.desktop.headline1.height};
   font-weight: ${(props) =>
     props.theme.typography.desktop.headline1.fontWeight};
-`;
+`
 
 export const CallSubTitle = styled.span`
   width: 100%;
@@ -50,7 +54,14 @@ export const CallSubTitle = styled.span`
   line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
   font-weight: ${(props) =>
     props.theme.typography.desktop.subtitle1.fontWeight};
-`;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 110%;
+    font-weight: ${props => props.theme.typography.tablet.headline1.fontWeight};
+    font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
+    line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
+  }
+`
 
 export const HeroImage = styled.img`
   width: 614px;
@@ -60,4 +71,4 @@ export const HeroImage = styled.img`
     width: 400px;
     height: 238px;
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const AvaliarSection = styled.section`
   display: flex;
@@ -10,7 +10,7 @@ export const AvaliarSection = styled.section`
   @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 20px;
   }
-`;
+`
 
 export const AvaliarCard = styled.div`
   width: 1376px;
@@ -43,7 +43,7 @@ export const AvaliarCard = styled.div`
     height: 388px;
     padding:0px 50px;
   }
-`;
+`
 
 export const AvaliarCardTitle = styled.h1`
   width: 412px;
@@ -61,7 +61,7 @@ export const AvaliarCardTitle = styled.h1`
   align-items: center;
   margin-bottom: 30px;
   color: #ffffff;
-`;
+`
 export const AvaliarCardSubtitle = styled.p`
   font-family: "Poppins";
   font-style: normal;
@@ -76,7 +76,7 @@ export const AvaliarCardSubtitle = styled.p`
   display: flex;
   align-items: center;
   color: #ffffff;
-`;
+`
 
 export const AvaliarButton = styled.button`
   font-weight: medium;
@@ -96,4 +96,4 @@ export const AvaliarButton = styled.button`
   &:hover {
     background-color: ${(props) => props.theme.colors.secondary.dark};
   }
-`;
+`
