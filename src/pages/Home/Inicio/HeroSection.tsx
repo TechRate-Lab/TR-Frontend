@@ -13,7 +13,7 @@ import heroImage from '../../../assets/newHeroSection.png'
 import { Flex } from '../../../components/styles/Flex.styled'
 import AvaliarEmpresa from '../../../components/Buttons/AvaliarEmpresa'
 
-const Inicio: React.FC = () => {
+const HeroSection: React.FC = () => {
   const theme = useContext(ThemeContext)
 
   return (
@@ -46,4 +46,4 @@ const Inicio: React.FC = () => {
   )
 }
 
-export default Inicio
+export default HeroSection
