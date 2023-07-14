@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 
 export const AvaliarSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 50vh;
-  padding: 0 100px;
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    padding: 20px;
+  margin-top: 200px;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    
   }
 `
 

@@ -34,6 +34,7 @@ export const theme = {
       dark: '#606060',
       dark_hover: '#4d4d4d',
       dark_active: '#3a3a3a',
+      soft_dark: '#2B2B2B',
       darker: '#2d2d2d'
     }
   },
@@ -149,6 +150,12 @@ export const theme = {
         fontSize: '16px',
         lineHeight: '150%'
       },
+      headline8: {
+        fontWeight: 'bold',
+        fontSize: '12px',
+        lineHeight: '160%',
+        fontFamily: 'Montserrat'
+      },
       subtitle1: {
         fontWeight: 'semiBold',
         fontSize: '14px',
@@ -172,6 +179,12 @@ export const theme = {
         fontSize: '12px',
         height: '20px',
         spacing: '0px'
+      },
+      body3: {
+        fontSize: '10px',
+        fontWeight: 'bold',
+        lineHeight: '150%',
+        fontFamily: 'Nunito'
       },
       caption: {
         fontWeight: 'regular',
