@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   ReputacaoCard,
   ReputacaoCardEmpresa,
@@ -8,18 +8,18 @@ import {
   ReputacaoSection,
   ReputacaoText,
   ReputacaoTextSubTitle,
-  ReputacaoTextTitle
-} from './style'
-import empresa1 from '../../../assets/logo_ifood.png'
-import empresa2 from '../../../assets/logo_tim.png'
-import empresa3 from '../../../assets/logo_perfectpay.png'
-import empresa4 from '../../../assets/logo_shopee.png'
-import empresa5 from '../../../assets/logo_magazine-luiza.png'
+  ReputacaoTextTitle,
+} from "./style";
+import empresa1 from "../../../assets/logo_ifood.png";
+import empresa2 from "../../../assets/logo_tim.png";
+import empresa3 from "../../../assets/logo_perfectpay.png";
+import empresa4 from "../../../assets/logo_shopee.png";
+import empresa5 from "../../../assets/logo_magazine-luiza.png";
 
 const Reputacao: React.FC = () => {
   return (
     <>
-      <ReputacaoSection>
+      <ReputacaoSection> 
         <ReputacaoCards>
           <ReputacaoCard className="melhores">
             <ReputacaoCardTitle>
@@ -49,7 +49,7 @@ const Reputacao: React.FC = () => {
               <ReputacaoCardEmpresa>
                 <p>5°</p>
                 <img src={empresa5} alt="empresa" />
-                <p>Magalu</p>
+                <p>Magazine Luiza</p>
               </ReputacaoCardEmpresa>
             </ReputacaoCardListaEmpresas>
           </ReputacaoCard>
@@ -81,7 +81,7 @@ const Reputacao: React.FC = () => {
               <ReputacaoCardEmpresa>
                 <p>5°</p>
                 <img src={empresa5} alt="empresa" />
-                <p>Magalu</p>
+                <p>Magazine Luiza</p>
               </ReputacaoCardEmpresa>
             </ReputacaoCardListaEmpresas>
           </ReputacaoCard>
@@ -97,7 +97,7 @@ const Reputacao: React.FC = () => {
         </ReputacaoText>
       </ReputacaoSection>
     </>
-  )
-}
+  );
+};
 
-export default Reputacao
+export default Reputacao;
