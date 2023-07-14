@@ -5,7 +5,6 @@ export const MainSection = styled.section`
   display: grid;
   place-items: center;
   justify-content: flex-start;
-  height: 100%;
   padding: 40px 24px;
   
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
@@ -14,9 +13,9 @@ export const MainSection = styled.section`
   }
 
   @media screen and (min-width:${(props) => props.theme.breakpoints.desktop}) {
-    padding: 0 112px;
+    padding: 80px 112px;
     width: 100%;
-    height: 36.5vh;
+    
   }
 `
 
@@ -28,6 +27,10 @@ export const Call = styled.div`
   
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     width: 386px;
+  }
+
+  @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
+    width: 550px;
   }
 `
 
@@ -66,7 +69,7 @@ export const CallSubTitle = styled.span`
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    width: 100%;
+    max-width: 100%;
     color: ${(props) => props.theme.colors.grey.darker};
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
@@ -88,12 +91,24 @@ export const HeroImage = styled.img`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     width: 614px;
     height: 400px;
+    object-fit: cover;
   }
 `
 
 export const Hero = styled.div`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: white;
+  position: relative;
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.4;
+    background-image: url(${background});
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  
 `

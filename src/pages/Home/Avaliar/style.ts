@@ -35,6 +35,7 @@ export const AvaliarCard = styled.div`
     padding-inline: 80px;
     padding-top: 72px;
     padding-bottom: 72px;
+    margin-inline: 112px;
   }
 `
 
@@ -49,17 +50,15 @@ export const AvaliarCardTitle = styled.h1`
   
    @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
      width: 412px;
-
   }
 
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-family: "Poppins";
+    font-family: Poppins;
+    font-size: 48px;
     font-style: normal;
-    font-weight: ${(props) => props.theme.typography.desktop.headline2.fontWeight};
-    font-size: ${(props) => props.theme.typography.desktop.headline2.fontSize};
-    line-height: ${(props) => props.theme.typography.desktop.headline2.height};
-    letter-spacing: ${(props) => props.theme.typography.desktop.headline2.spacing};
-
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.96px;
   }
 `
 export const AvaliarCardSubtitle = styled.p`
@@ -120,5 +119,10 @@ export const AvaliarButton = styled.button`
       font-weight: 500;
       line-height: 100%; /* 20px */
       text-transform: uppercase;
+  }
+
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    padding: 24px 24px;
+    margin-bottom: 0;
   }
 `

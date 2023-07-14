@@ -22,11 +22,13 @@ export const SobreBoxMain = styled.div`
   background: ${(props) => props.theme.colors.secondary.normal};
   border-radius: 0px 0px 100px 0px;
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    width: 75%;
+    width: 62.5%;
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     padding-left: 112px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 `
 
@@ -38,6 +40,10 @@ export const SobreBoxMainText = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     max-width: 400px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    max-width: 500px;
   }
 `
 
@@ -109,7 +115,11 @@ export const SobreBoxMainButton = styled.button`
   color: white;
   margin-top: 60px;
   cursor: pointer;
-  &:hover {
-    background-color: ${(props) => props.theme.colors.secondary.dark};
+  // &:hover {
+  //   background-color: ${(props) => props.theme.colors.secondary.dark};
+  // }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    margin-top: 64px;
   }
 `

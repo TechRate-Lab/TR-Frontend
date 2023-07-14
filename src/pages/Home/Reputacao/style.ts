@@ -63,6 +63,17 @@ export const ReputacaoCardTitle = styled.h2`
   max-width: 170px;
   padding: 12px 10px;
   color: #ffffff;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    max-width: 283px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.15px;
+    padding: 16px 20px
+  }
 `
 
 export const ReputacaoCardListaEmpresas = styled.div`
@@ -74,6 +85,9 @@ export const ReputacaoCardListaEmpresas = styled.div`
   padding-bottom: 10px;
   gap: 15px;
   
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    margin-inline: 16px;
+  }
 `
 export const ReputacaoCardEmpresa = styled.div`
   display: flex;

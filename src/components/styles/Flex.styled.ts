@@ -8,7 +8,7 @@ export const Flex = styled.div`
   }
   
   @media(min-width: 1600px) {
-    gap: 211px;
+    gap: 311px;
   }
 
 `
