@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   BoxImage,
   SobreBoxMain,
@@ -7,8 +7,8 @@ import {
   SobreBoxMainText,
   SobreBoxMainTitle,
   BoxSecondary,
-  SobreSection,
-} from "./style";
+  SobreSection, OverlayBg
+} from './About.styled'
 
 import teamImage from '../../../assets/successful-happy-business-team.png'
 
@@ -16,6 +16,7 @@ const Sobre: React.FC = () => {
   return (
     <>
       <SobreSection>
+        <OverlayBg/>
         <SobreBoxMain>
           <SobreBoxMainText>
             <SobreBoxMainTitle>Sobre nós</SobreBoxMainTitle>
@@ -43,16 +44,15 @@ const Sobre: React.FC = () => {
               ouvi-los.
             </SobreBoxMainParagraph>
           </SobreBoxMainText>
-            <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
+          <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
         </SobreBoxMain>
         <BoxSecondary />
         <BoxImage
-          src={teamImage}  
-          alt="image"
+          src={teamImage} alt="image"
         />
       </SobreSection>
     </>
-  );
-};
+  )
+}
 
-export default Sobre;
+export default Sobre
