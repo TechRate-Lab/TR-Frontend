@@ -1,14 +1,15 @@
-import "./App.css";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./themes/themes";
+import { defaultTheme } from "./styles/themes/themes";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
+import { GlobalStyle } from "./styles/global";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
       <div className="App">
-        <Home/>
+        <Home />
       </div>
     </ThemeProvider>
   );

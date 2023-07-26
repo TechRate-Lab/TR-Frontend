@@ -5,17 +5,18 @@ import Avaliar from './Avaliar'
 import HeroSection from './Inicio/HeroSection'
 import Reputacao from './Reputacao'
 import Sobre from './Sobre/About'
+import { Container } from './styles'
 
 const Home: React.FC = () => {
   return (
-    <>
+    <Container>
       <Header />
       <HeroSection />
       <Sobre />
       <Reputacao />
       <Avaliar />
-      <Footer/>
-    </>
+      <Footer />
+    </Container>
   )
 }
 
