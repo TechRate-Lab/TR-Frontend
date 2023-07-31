@@ -5,15 +5,14 @@ export const StyledHeader = styled.div`
 `
 
 export const StyledLogo = styled.div`
-  width: 160px;
-  margin-left: 112px;
-  padding: 16px 0;
+  width: 100%;
+  padding: 1rem 5rem;
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     margin-left: 20px;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    margin-left: 112px;
+    padding: 1rem 3rem;
   }
 `
 
