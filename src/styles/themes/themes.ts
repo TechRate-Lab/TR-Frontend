@@ -233,6 +233,6 @@ export const defaultTheme = {
   breakpoints: {
     mobile: '428px',
     tablet: '834px',
-    desktop: '1600px'
+    desktop: '1440px'
   }
 }

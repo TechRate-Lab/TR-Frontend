@@ -1,21 +1,36 @@
 import styled from 'styled-components'
 import background from '../../../assets/homeBackground.png'
 
-export const MainSection = styled.section`
-  display: grid;
-  place-items: center;
-  justify-content: flex-start;
-  padding: 40px 24px;
+export const Container = styled.section`
+  position: relative;
+  padding: 0 5rem;
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.4;
+    background-image: url(${background});
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }  
+
+  @media screen and (min-width:${(props) => props.theme.breakpoints.desktop}) {
+    padding: 0 3rem;
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 100%;
     padding: 40px 24px;
-  }
-
-  @media screen and (min-width:${(props) => props.theme.breakpoints.desktop}) {
-    padding: 80px 112px;
-    width: 100%;
-    
   }
 `
 
@@ -74,7 +89,7 @@ export const CallSubTitle = styled.span`
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
     font-weight: ${(props) =>
-            props.theme.typography.desktop.subtitle1.fontWeight};
+    props.theme.typography.desktop.subtitle1.fontWeight};
   }
 `
 
@@ -93,22 +108,4 @@ export const HeroImage = styled.img`
     height: 400px;
     object-fit: cover;
   }
-`
-
-export const Hero = styled.div`
-  position: relative;
-  &::before {
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    opacity: 0.4;
-    background-image: url(${background});
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
-  
 `
