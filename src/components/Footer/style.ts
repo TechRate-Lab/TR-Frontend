@@ -13,6 +13,7 @@ export const Content = styled.div`
   gap: 1rem;
 `
 export const NavFooter = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
 `
@@ -60,16 +61,4 @@ export const FooterSocials = styled.div`
   gap: 24px;
   margin-top: 32px;
   margin-bottom: 40px;
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    margin-left: 50px;
-    margin-top: 12px;
-    align-self: flex-start;
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    margin-left: 424px;
-    margin-top: 12px;
-    align-self: flex-start;
-  }
 `
