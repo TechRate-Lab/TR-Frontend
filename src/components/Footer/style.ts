@@ -1,31 +1,44 @@
 import styled from 'styled-components'
 
-export const FooterContainer = styled.footer`
-  margin-top: 80px;
-  margin-inline: 20px;
-  
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    display: flex;
-  }
+export const Container = styled.footer`
+  width: 100%;
+  padding: 4rem 5rem 0;
+`
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    margin-inline: 112px;
-  }
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+`
+export const NavFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
 
-
-
+export const InfoFooter = styled.div`
+  display: flex;
+  gap: 3rem;
 `
 
 export const FooterLogo = styled.img`
-  width: 160px;
-  height: 50px;
-  object-fit: cover;
-  margin-bottom: 12px;
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    margin-right: 24px;
+  width: 130px;
+  height: 40px;
+`
+export const FooterContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  span{
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
   }
 `
+
+
 
 export const FooterMsg = styled.span`
   width: 90%;
@@ -34,8 +47,6 @@ export const FooterMsg = styled.span`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 21px */
-
 `
 
 export const FooterMsgContainer = styled.div`
@@ -61,22 +72,4 @@ export const FooterSocials = styled.div`
     margin-top: 12px;
     align-self: flex-start;
   }
-`
-
-export const FooterContact = styled.div`
-  p {
-    margin-top: 12px;
-  }
-`
-
-export const FooterTerms = styled.div`
-  p {
-    margin-top: 12px;
-  }
-`
-
-export const FooterContainerContactTerms = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 53px;
 `
