@@ -7,16 +7,17 @@ import {
   SobreBoxMainText,
   SobreBoxMainTitle,
   BoxSecondary,
-  SobreSection, OverlayBg
+  Container, OverlayBg,
+  Content
 } from './About.styled'
 
 import teamImage from '../../../assets/successful-happy-business-team.png'
 
 const Sobre: React.FC = () => {
   return (
-    <>
-      <SobreSection>
-        <OverlayBg/>
+    <Container>
+      <OverlayBg />
+      <Content>
         <SobreBoxMain>
           <SobreBoxMainText>
             <SobreBoxMainTitle>Sobre nós</SobreBoxMainTitle>
@@ -25,33 +26,28 @@ const Sobre: React.FC = () => {
               pesquisa a empresas que possuam os mesmos valores que você. Com as
               informações mais relevantes em evidência, você poderá se
               candidatar com confiança, autonomia e clareza.
-            </SobreBoxMainParagraph>
-            <SobreBoxMainParagraph>
+              <br /><br />
               Acreditamos que a transparência é o primeiro passo para que
               trabalhadores e empregadores possam estar alinhados.
-            </SobreBoxMainParagraph>
-            <SobreBoxMainParagraph>
+              <br /><br />
               Nossa missão é unir pessoas e negócios que possuam as mesmas
               visões e valores. E assim, o match perfeito acontecer!
-            </SobreBoxMainParagraph>
-            <SobreBoxMainParagraph>
+              <br /><br />
               Nosso time é formado por aspirantes e profissionais de tecnologia
               voluntários, unidos com um único objetivo: colocar em prática todo
               o conhecimento teórico adquirido.
-            </SobreBoxMainParagraph>
-            <SobreBoxMainParagraph>
+              <br /><br />
               Vamos juntos transformar o mercado tech? Estamos aqui para
               ouvi-los.
             </SobreBoxMainParagraph>
+            <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
           </SobreBoxMainText>
-          <SobreBoxMainButton>Enviar E-mail</SobreBoxMainButton>
         </SobreBoxMain>
-        <BoxSecondary />
         <BoxImage
           src={teamImage} alt="image"
         />
-      </SobreSection>
-    </>
+      </Content>
+    </Container>
   )
 }
 

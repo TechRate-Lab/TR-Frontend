@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
-export const SobreSection = styled.section`
+export const Container = styled.section`
   position: relative;
+  width: 100%;
 `
 
 export const OverlayBg = styled.div`
@@ -10,15 +11,23 @@ export const OverlayBg = styled.div`
   top: 0;
   width: 100%;
   border-radius: 0px 0px 100px 0px;
-  height: 700px;
+  height: 90%;
   z-index: -1;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    display: none;
+  }
+`
+
+export const Content = styled.section`
+display: flex;
+align-items: center;
+justify-content: space-between;
 `
 
 export const SobreBoxMain = styled.div`
-  width: 100%;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-bottom: 40px;
+display: flex;
+padding: 2rem 6rem;
   background: ${(props) => props.theme.colors.secondary.normal};
   border-radius: 0px 0px 100px 0px;
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
@@ -33,17 +42,13 @@ export const SobreBoxMain = styled.div`
 `
 
 export const SobreBoxMainText = styled.div`
-  max-width: 388px;
   display: flex;
   flex-direction: column;
+  width: 90%;
   gap: 20px;
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    max-width: 400px;
-  }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    max-width: 500px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 100%;
   }
 `
 
@@ -55,23 +60,14 @@ export const BoxSecondary = styled.div`
 `
 
 export const BoxImage = styled.img`
-  position: absolute;
+   width: 450px;
+   height: 100%;
+   display: flex;
+   margin-bottom: 15rem;
+   padding: 0 1rem;
 
-  display: none;
- 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    width: 350px;
-    display: block;
-    right: 0;
-    top: 30%;
-    margin-right: 20px;
-  }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    width: 600px;
-    display: block;
-    right: 0;
-    top: 20%;
-    margin-right: 290px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    display: none;
   }
 `
 
