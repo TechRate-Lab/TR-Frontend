@@ -3,7 +3,7 @@ import background from '../../../assets/homeBackground.png'
 
 export const Container = styled.section`
   position: relative;
-  padding: 0 5rem;
+  padding: 0 5rem 3rem;
   &::before {
     content: "";
     top: 0;
@@ -16,10 +16,6 @@ export const Container = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-  }  
-
-  @media screen and (min-width:${(props) => props.theme.breakpoints.desktop}) {
-    padding: 0 3rem;
   }
 `
 
