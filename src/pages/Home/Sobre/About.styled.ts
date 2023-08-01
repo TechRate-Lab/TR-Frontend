@@ -27,7 +27,7 @@ justify-content: space-between;
 
 export const SobreBoxMain = styled.div`
 display: flex;
-padding: 2rem 6rem;
+padding: 2rem 5rem;
   background: ${(props) => props.theme.colors.secondary.normal};
   border-radius: 0px 0px 100px 0px;
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
