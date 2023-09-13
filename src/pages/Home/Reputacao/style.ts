@@ -1,19 +1,12 @@
 import styled from 'styled-components'
 
-export const ReputacaoSection = styled.section`
+export const Container = styled.section`
+padding: 3rem 5rem;
+`
+export const Content = styled.section`
   display: flex;
-  flex-direction: column-reverse;
-  margin-top: 40px;
-  margin-left: 20px;
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: row;
-    gap: 24px;
-  }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    margin-left: 112px;
-    margin-top: 80px;
-    gap: 76px;
-  }
+  justify-content: center;
+  gap: 2rem;  
 `
 
 export const ReputacaoText = styled.div`

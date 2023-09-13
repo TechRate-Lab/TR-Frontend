@@ -1,10 +1,10 @@
 import React from 'react'
 import { Footer } from '../../components/Footer'
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header'
 import Avaliar from './Avaliar'
-import HeroSection from './Inicio/HeroSection'
+import HeroSection from './Inicio'
 import Reputacao from './Reputacao'
-import Sobre from './Sobre/About'
+import Sobre from './Sobre'
 import { Container } from './styles'
 
 const Home: React.FC = () => {

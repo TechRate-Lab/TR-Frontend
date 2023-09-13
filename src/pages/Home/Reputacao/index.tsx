@@ -5,10 +5,11 @@ import {
   ReputacaoCardListaEmpresas,
   ReputacaoCardTitle,
   ReputacaoCards,
-  ReputacaoSection,
+  Container,
   ReputacaoText,
   ReputacaoTextSubTitle,
-  ReputacaoTextTitle
+  ReputacaoTextTitle,
+  Content
 } from './style'
 import empresa1 from '../../../assets/logo_ifood.png'
 import empresa2 from '../../../assets/logo_tim.png'
@@ -18,8 +19,8 @@ import empresa5 from '../../../assets/logo_magazine-luiza.png'
 
 const Reputacao: React.FC = () => {
   return (
-    <>
-      <ReputacaoSection>
+    <Container>
+      <Content>
         <ReputacaoCards>
           <ReputacaoCard className="melhores">
             <ReputacaoCardTitle>
@@ -95,8 +96,8 @@ const Reputacao: React.FC = () => {
             seu interesse. Nos ajude avaliando uma!
           </ReputacaoTextSubTitle>
         </ReputacaoText>
-      </ReputacaoSection>
-    </>
+      </Content>
+    </Container>
   )
 }
 
