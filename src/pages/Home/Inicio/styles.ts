@@ -45,12 +45,14 @@ export const Call = styled.div`
   }
 `
 
-export const CallTitle = styled.span`
-  font-size: ${props => props.theme.typography.mobile.headline1.fontSize};
-  color: ${(props) => props.theme.colors.secondary.normal};
-  font-weight: ${(props) => props.theme.typography.mobile.headline1.fontWeight};
+export const Title = styled.h1`
+  color: ${(props) => props.theme.colors.primary.normal};
+
+  font-size: ${props => props.theme.typography.desktop.headline1.fontSize};
+  font-weight: ${(props) => props.theme.typography.desktop.headline1.fontWeight};
+  letter-spacing: ${(props) => props.theme.typography.desktop.headline1.spacing};;
   
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -59,13 +61,14 @@ export const CallTitle = styled.span`
     padding-top: 16px;
   }
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-size: ${(props) => props.theme.typography.desktop.headline1.fontSize};
-    line-height: ${(props) => props.theme.typography.desktop.headline1.height};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    color: red;
+    font-size: ${(props) => props.theme.typography.mobile.headline1.fontSize};
+    line-height: ${(props) => props.theme.typography.mobile.headline1.height};
   }
 `
 
-export const CallSubTitle = styled.span`
+export const SubTitle = styled.span`
   max-width: 384px;
   font-weight: ${props => props.theme.typography.mobile.headline7.fontWeight};
   font-size: ${props => props.theme.typography.mobile.headline7.fontSize};
@@ -84,24 +87,22 @@ export const CallSubTitle = styled.span`
     color: ${(props) => props.theme.colors.grey.darker};
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
-    font-weight: ${(props) =>
-    props.theme.typography.desktop.subtitle1.fontWeight};
+    font-weight: ${(props) => props.theme.typography.desktop.subtitle1.fontWeight};
   }
 `
 
 export const HeroImage = styled.img`
-  display: none;
+  width: 615px;
+  height: 400px;
+  object-fit: cover; 
   
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     display: block;
     width: 400px;
     height: 238px;
-  }
-  
+  }  
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    width: 614px;
-    height: 400px;
-    object-fit: cover;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
   }
 `

@@ -9,7 +9,7 @@ import {
   NavFooter,
   InfoFooter
 } from './style'
-import logo from '../../assets/Logo.png'
+import logo from '../../assets/imgLogo.png'
 import facebookIcon from '../../assets/bxl-facebook.svg'
 import instagramIcon from '../../assets/bxl-instagram.svg'
 import linkedinIcon from '../../assets/bxl-linkedin.svg'

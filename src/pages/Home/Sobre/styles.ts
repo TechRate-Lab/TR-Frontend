@@ -6,7 +6,7 @@ export const Container = styled.section`
 `
 
 export const OverlayBg = styled.div`
-  background-color: #6AEDAB;
+  background-color: ${(props) => props.theme.colors.primary.light};
   position: absolute;
   top: 0;
   width: 100%;
@@ -26,18 +26,19 @@ justify-content: space-between;
 `
 
 export const SobreBoxMain = styled.div`
-display: flex;
-padding: 2rem 5rem;
-  background: ${(props) => props.theme.colors.secondary.normal};
+  width: 60%;
+  padding: 5rem 7rem;
+  
+  display: flex;
+  background: ${(props) => props.theme.colors.primary.normal};
   border-radius: 0px 0px 100px 0px;
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 62.5%;
   }
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    padding-left: 112px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 2rem 5rem;
   }
 `
 
@@ -60,11 +61,11 @@ export const BoxSecondary = styled.div`
 `
 
 export const BoxImage = styled.img`
-   width: 450px;
-   height: 100%;
-   display: flex;
-   margin-bottom: 15rem;
-   padding: 0 1rem;
+   width: 550px;
+   height: 450px;
+   position: absolute;
+   top: 15%;
+   right: 8%;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     display: none;

@@ -1,5 +1,7 @@
 export const defaultTheme = {
   colors: {
+    white: '#FFFFFF',
+    black: '#252525',
     primary: {
       light: '#6A9DA7',
       light_hover: '#e9fcf2',
@@ -24,8 +26,7 @@ export const defaultTheme = {
       dark_active: '#001a19',
       darker: '001413'
     },
-    grey: {
-      white: '#FFFFFF',
+    grey: {      
       light: '#f2f2f2',
       light_hover: '#ececec',
       light_active: '#d8d8d8',
@@ -36,7 +37,6 @@ export const defaultTheme = {
       dark_hover: '#4d4d4d',
       dark_active: '#3a3a3a',
       soft_dark: '#2B2B2B',
-      black: '#252525'
     }
   },
   typography: {
@@ -107,7 +107,7 @@ export const defaultTheme = {
         fontWeight: '400',
         fontSize: '16px',
         lineHeight: '24px'
-      }
+      },
     },
     mobile: {
       headline1: {
