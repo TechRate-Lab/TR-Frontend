@@ -46,7 +46,11 @@ export const SobreBoxMainText = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
-  gap: 20px;
+  gap: 2.5rem;
+
+  button{
+    margin-top: 1rem;
+  }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 100%;
@@ -95,28 +99,5 @@ export const SobreBoxMainParagraph = styled.p`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     
-  }
-`
-
-export const SobreBoxMainButton = styled.button`
-  font-weight: medium;
-  font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 100%;
-  padding: 18px 24px;
-  width: 180px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 8px;
-  color: white;
-  margin-top: 60px;
-  cursor: pointer;
-  // &:hover {
-  //   background-color: ${(props) => props.theme.colors.secondary.dark};
-  // }
-
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    margin-top: 64px;
   }
 `

@@ -50,7 +50,8 @@ export const Title = styled.h1`
 
   font-size: ${props => props.theme.typography.desktop.headline1.fontSize};
   font-weight: ${(props) => props.theme.typography.desktop.headline1.fontWeight};
-  letter-spacing: ${(props) => props.theme.typography.desktop.headline1.spacing};;
+  letter-spacing: ${(props) => props.theme.typography.desktop.headline1.spacing};
+  line-height: 100%;
   
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: 48px;

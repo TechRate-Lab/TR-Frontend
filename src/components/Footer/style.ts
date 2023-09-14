@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
   width: 100%;
-  padding: 4rem 5rem 0;
+  padding: 3rem 5rem 0;
+  margin-bottom: 1rem;
 `
 
 export const Content = styled.div`

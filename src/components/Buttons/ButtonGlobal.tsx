@@ -3,7 +3,7 @@ import { ButtonEnableSmall } from "./style";
 export interface ButtonProps {
   children: string;
   width:string;
-  heigth: string;
+  height: string;
   padding:string;
   color?: string;
   backgroundColor?: string;
@@ -11,6 +11,7 @@ export interface ButtonProps {
   fontWeight?: string;
   fontSize?: string;
   spacing?: string;
+  border?: string;
 }
 
 const ButtonGlobal: React.FC<ButtonProps> = ({
@@ -20,10 +21,11 @@ const ButtonGlobal: React.FC<ButtonProps> = ({
   children,
   fontWeight,
   fontSize,
-  heigth,
+  height,
   spacing,
   padding,
-  width
+  width,
+  border
 }) => {
   return (
     <ButtonEnableSmall
@@ -31,11 +33,12 @@ const ButtonGlobal: React.FC<ButtonProps> = ({
       hoverColor={hoverColor}
       fontWeight={fontWeight}
       fontSize={fontSize}
-      heigth={heigth}
+      height={height}
       spacing={spacing}
       padding={padding}
       color={color}
       width={width}
+      border={border}
     >
       {children}
     </ButtonEnableSmall>
