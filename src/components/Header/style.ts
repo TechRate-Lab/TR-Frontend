@@ -18,6 +18,8 @@ export const StyledHeader = styled.div`
 export const Logo = styled.img`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     margin-right: 1rem;
+    width: 93px;
+    height: 30px;
   }
 `;
 
