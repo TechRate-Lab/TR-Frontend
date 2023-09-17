@@ -232,7 +232,7 @@ export const defaultTheme = {
     }
   },
   breakpoints: {
-    mobile: '428px',
+    mobile: '360px',
     tablet: '834px',
     desktop: '1440px'
   }

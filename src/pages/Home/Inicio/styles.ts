@@ -63,7 +63,6 @@ export const Title = styled.h1`
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    color: red;
     font-size: ${(props) => props.theme.typography.mobile.headline1.fontSize};
     line-height: ${(props) => props.theme.typography.mobile.headline1.height};
   }
