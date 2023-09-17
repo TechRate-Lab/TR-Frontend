@@ -5,7 +5,7 @@ export const Container = styled.section`
   width: 100%;
 `
 export const Content = styled.section`
-  background-color: #013a37;
+  background-color: ${(props) => props.theme.colors.primary.normal};
   position: relative;
 `
 
@@ -27,7 +27,7 @@ export const AvaliarCard = styled.div`
 
 export const AvaliarCardTitle = styled.h1`
 
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   font-family: Poppins;
   font-size: 32px;
   font-style: normal;
@@ -54,7 +54,7 @@ export const AvaliarCardSubtitle = styled.p`
   font-weight: 400;
   line-height: 150%;
   margin-top: 24px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
 
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
       font-family: Poppins;
@@ -65,8 +65,6 @@ export const AvaliarCardSubtitle = styled.p`
     }
   
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: ${(props) => props.theme.typography.desktop.subtitle1.fontWeight};
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
@@ -99,9 +97,7 @@ export const AvaliarButton = styled.button`
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 16px 24px;
       width: 276px;
-      font-family: Poppins;
       font-size: 20px;
-      font-style: normal;
       font-weight: 500;
       line-height: 100%; /* 20px */
       text-transform: uppercase;

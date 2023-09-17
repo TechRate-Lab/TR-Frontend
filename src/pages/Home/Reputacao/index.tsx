@@ -92,8 +92,7 @@ const Reputacao: React.FC = () => {
             Em breve: Empresas em destaque
           </ReputacaoTextTitle>
           <ReputacaoTextSubTitle>
-            Aqui você poderá descobrir a reputação das empresas de tecnologia do
-            seu interesse. Nos ajude avaliando uma!
+            Só aqui você escolhe as melhores empresas para seu ingresso no mercado da tecnologia de acordo com as avalições de outros usuários. <a href="#">Cadastre-se</a> e avalie você também!
           </ReputacaoTextSubTitle>
         </ReputacaoText>
       </Content>

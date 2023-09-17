@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
           </SubTitle>
           <ButtonGlobal 
             children='CADASTRE-SE'
-            heigth='72px'
+            height='72px'
             width='226px'
             padding='0px'
           />

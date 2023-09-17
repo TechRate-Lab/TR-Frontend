@@ -3,7 +3,7 @@ import { ButtonProps } from "./ButtonGlobal";
 
 export const ButtonEnableSmall = styled.button<ButtonProps>`
   width:${(props) => props.width};
-  height: ${(props) => props.heigth};
+  height: ${(props) => props.height};
   padding: ${(props) => props.padding};
 
   color:${(props) => props.color || props.theme.colors.white};
@@ -14,7 +14,7 @@ export const ButtonEnableSmall = styled.button<ButtonProps>`
   letter-spacing: ${(props) => props.spacing || props.theme.buttons.extraLarge.spacing};
 
   border-radius: 8px;
-  border: none;
+  border: ${(props) => props.border || 'none'};
   cursor: pointer;
 
   &:hover {

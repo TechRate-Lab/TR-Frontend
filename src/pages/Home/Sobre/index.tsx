@@ -2,7 +2,6 @@ import React from 'react'
 import {
   BoxImage,
   SobreBoxMain,
-  SobreBoxMainButton,
   SobreBoxMainParagraph,
   SobreBoxMainText,
   SobreBoxMainTitle,
@@ -35,13 +34,14 @@ const Sobre: React.FC = () => {
               <br /><br />
               Vamos juntos transformar o mercado tech? Estamos aqui para ouvi-los.
             </SobreBoxMainParagraph>
-            <SobreBoxMainButton>SAIBA MAIS</SobreBoxMainButton>
             <ButtonGlobal 
             children='SAIBA MAIS'
-            heigth='72px'
-            width='226px'
-            padding='0px'
+            fontSize='20px'
+            height='52px'
+            width='160px'
+            padding='0'
             backgroundColor={colors.primary.normal}
+            border='1px solid white'
           />
           </SobreBoxMainText>
         </SobreBoxMain>
