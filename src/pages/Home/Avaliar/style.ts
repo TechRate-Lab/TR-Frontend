@@ -1,22 +1,16 @@
 import styled from 'styled-components'
 import background from '../../../assets/homeBackground-branco.png'
 
-export const AvaliarSection = styled.section`
+export const Container = styled.section`
   width: 100%;
-  margin-top: 80px;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    
-  }
+`
+export const Content = styled.section`
+  background-color: ${(props) => props.theme.colors.primary.normal};
+  position: relative;
 `
 
-export const AvaliarCard = styled.div`
-  background-color: #013a37;
-  border-radius: 8px;
-  margin-inline: 20px;
-  padding-top: 34px;
-  padding-inline: 24px;
-  position: relative;
-  
+export const AvaliarCard = styled.div`  
+  padding: 5rem 5rem;
   &::before {
     content: "";
     top: 0;
@@ -29,19 +23,11 @@ export const AvaliarCard = styled.div`
     background-image: url(${background});
     background-size: cover;
   }
-  
-  
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    padding-inline: 80px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    margin-inline: 112px;
-  }
 `
 
 export const AvaliarCardTitle = styled.h1`
 
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
   font-family: Poppins;
   font-size: 32px;
   font-style: normal;
@@ -68,19 +54,17 @@ export const AvaliarCardSubtitle = styled.p`
   font-weight: 400;
   line-height: 150%;
   margin-top: 24px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.white};
 
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
       font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%;h
+      line-height: 150%;
     }
   
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-family: "Poppins";
-    font-style: normal;
     font-weight: ${(props) => props.theme.typography.desktop.subtitle1.fontWeight};
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
@@ -113,9 +97,7 @@ export const AvaliarButton = styled.button`
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 16px 24px;
       width: 276px;
-      font-family: Poppins;
       font-size: 20px;
-      font-style: normal;
       font-weight: 500;
       line-height: 100%; /* 20px */
       text-transform: uppercase;

@@ -1,29 +1,44 @@
 import { ButtonEnableSmall } from "./style";
 
-import { IButtonProps } from "./IButtonProps";
-const ButtonGlobal: React.FC<IButtonProps> = ({
+export interface ButtonProps {
+  children: string;
+  width:string;
+  height: string;
+  padding:string;
+  color?: string;
+  backgroundColor?: string;
+  hoverColor?: string;
+  fontWeight?: string;
+  fontSize?: string;
+  spacing?: string;
+  border?: string;
+}
+
+const ButtonGlobal: React.FC<ButtonProps> = ({
   backgroundColor,
   hoverColor,
   color,
   children,
   fontWeight,
   fontSize,
-  heigth,
+  height,
   spacing,
   padding,
-  width
+  width,
+  border
 }) => {
   return (
     <ButtonEnableSmall
-      hoverColor={backgroundColor}
-      backgroundColor={hoverColor}
+      backgroundColor={backgroundColor}
+      hoverColor={hoverColor}
       fontWeight={fontWeight}
       fontSize={fontSize}
-      heigth={heigth}
+      height={height}
       spacing={spacing}
       padding={padding}
       color={color}
       width={width}
+      border={border}
     >
       {children}
     </ButtonEnableSmall>

@@ -1,10 +1,12 @@
-export const theme = {
+export const defaultTheme = {
   colors: {
+    white: '#FFFFFF',
+    black: '#252525',
     primary: {
-      light: '#f0fd7',
+      light: '#6A9DA7',
       light_hover: '#e9fcf2',
       light_active: 'd1f9e5',
-      normal: '#6aedab',
+      normal: '#025464',
       normal_hover: '5fd59a',
       normal_active: '#55be89',
       dark: '#50b280',
@@ -13,10 +15,10 @@ export const theme = {
       darker: '#25533c'
     },
     secondary: {
-      light: '#e6ebed',
+      light: '#E8AA42',
       light_hover: '#d9e1e1',
       light_active: '#b0c2c1',
-      normal: '#013a37',
+      normal: '#E57C23',
       normal_hover: '#013432',
       normal_active: '#012e2c',
       dark: '#012c29',
@@ -24,7 +26,7 @@ export const theme = {
       dark_active: '#001a19',
       darker: '001413'
     },
-    grey: {
+    grey: {      
       light: '#f2f2f2',
       light_hover: '#ececec',
       light_active: '#d8d8d8',
@@ -35,7 +37,6 @@ export const theme = {
       dark_hover: '#4d4d4d',
       dark_active: '#3a3a3a',
       soft_dark: '#2B2B2B',
-      darker: '#2d2d2d'
     }
   },
   typography: {
@@ -106,7 +107,7 @@ export const theme = {
         fontWeight: '400',
         fontSize: '16px',
         lineHeight: '24px'
-      }
+      },
     },
     mobile: {
       headline1: {
@@ -233,6 +234,6 @@ export const theme = {
   breakpoints: {
     mobile: '428px',
     tablet: '834px',
-    desktop: '1600px'
+    desktop: '1440px'
   }
 }

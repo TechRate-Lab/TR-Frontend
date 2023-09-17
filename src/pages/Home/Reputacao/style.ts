@@ -1,31 +1,22 @@
 import styled from 'styled-components'
 
-export const ReputacaoSection = styled.section`
+export const Container = styled.section`
+  padding: 3rem 5rem;
+`
+export const Content = styled.section`
   display: flex;
-  flex-direction: column-reverse;
-  margin-top: 40px;
-  margin-left: 20px;
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: row;
-    gap: 24px;
-  }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    margin-left: 112px;
-    margin-top: 80px;
-    gap: 76px;
-  }
+  justify-content: center;
+  gap: 4rem;  
 `
 
 export const ReputacaoText = styled.div`
-  max-width: 388px;
-  margin-bottom: 40px;
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
-    max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
   }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
-    max-width: 658px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
   }
 `
 
@@ -154,43 +145,38 @@ export const ReputacaoCardEmpresa = styled.div`
   }
 `
 
-export const ReputacaoTextTitle = styled.h1`
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: ${(props) =>
-    props.theme.typography.desktop.headline2.fontWeight};
-  font-size: ${(props) => props.theme.typography.mobile.headline2.fontSize};
-  line-height: ${(props) => props.theme.typography.mobile.headline2.height};
-  letter-spacing: ${(props) =>
-    props.theme.typography.mobile.headline2.spacing};
-  padding-bottom: 16px;
+export const ReputacaoTextTitle = styled.h2`
+  width: 512px;
 
-  color: ${(props) => props.theme.colors.secondary.normal};
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  color: ${(props) => props.theme.colors.primary.normal};
+
+  font-size: ${(props) => props.theme.typography.desktop.headline2.fontSize};
+  font-weight: ${(props) => props.theme.typography.desktop.headline2.fontWeight};
+  line-height: ${(props) => props.theme.typography.desktop.headline2.height};
+  letter-spacing: ${(props) => props.theme.typography.mobile.headline2.spacing};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: ${(props) => props.theme.typography.desktop.headline4.fontSize};
 
   }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    width: 512px;
-    padding-bottom: 24px;
-    font-size: ${(props) => props.theme.typography.desktop.headline2.fontSize};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    font-size: ${(props) => props.theme.typography.mobile.headline2.fontSize};
 
   }
 `
 
 export const ReputacaoTextSubTitle = styled.p`
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: ${(props) => props.theme.typography.mobile.headline7.fontWeight};
-  font-size: ${(props) => props.theme.typography.mobile.headline7.fontSize};
-  line-height: ${(props) => props.theme.typography.mobile.headline7.height};
-  color: ${(props) => props.theme.colors.grey.darker};
+  width: 520px;
+  font-weight: ${(props) => props.theme.typography.desktop.subtitle2.fontWeight};
+  font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
+  line-height: ${(props) => props.theme.typography.desktop.subtitle2.height};
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    font-size: ${(props) => props.theme.typography.desktop.subtitle2.fontSize};
+  a{
+    color: ${(props) => props.theme.colors.secondary.normal};
   }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-weight: 600;
-    font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+  }
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
   }
 `

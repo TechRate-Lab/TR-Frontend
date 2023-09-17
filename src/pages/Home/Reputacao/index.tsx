@@ -5,10 +5,11 @@ import {
   ReputacaoCardListaEmpresas,
   ReputacaoCardTitle,
   ReputacaoCards,
-  ReputacaoSection,
+  Container,
   ReputacaoText,
   ReputacaoTextSubTitle,
-  ReputacaoTextTitle
+  ReputacaoTextTitle,
+  Content
 } from './style'
 import empresa1 from '../../../assets/logo_ifood.png'
 import empresa2 from '../../../assets/logo_tim.png'
@@ -18,8 +19,8 @@ import empresa5 from '../../../assets/logo_magazine-luiza.png'
 
 const Reputacao: React.FC = () => {
   return (
-    <>
-      <ReputacaoSection>
+    <Container>
+      <Content>
         <ReputacaoCards>
           <ReputacaoCard className="melhores">
             <ReputacaoCardTitle>
@@ -91,12 +92,11 @@ const Reputacao: React.FC = () => {
             Em breve: Empresas em destaque
           </ReputacaoTextTitle>
           <ReputacaoTextSubTitle>
-            Aqui você poderá descobrir a reputação das empresas de tecnologia do
-            seu interesse. Nos ajude avaliando uma!
+            Só aqui você escolhe as melhores empresas para seu ingresso no mercado da tecnologia de acordo com as avalições de outros usuários. <a href="#">Cadastre-se</a> e avalie você também!
           </ReputacaoTextSubTitle>
         </ReputacaoText>
-      </ReputacaoSection>
-    </>
+      </Content>
+    </Container>
   )
 }
 

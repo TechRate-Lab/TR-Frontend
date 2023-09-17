@@ -4,13 +4,14 @@ import {
   AvaliarCard,
   AvaliarCardSubtitle,
   AvaliarCardTitle,
-  AvaliarSection,
+  Container,
+  Content,
 } from "./style";
 
 const Avaliar: React.FC = () => {
   return (
-    <>
-      <AvaliarSection>
+    <Container>
+      <Content>
         <AvaliarCard>
           <AvaliarCardTitle>Compartilhe sua experiência</AvaliarCardTitle>
           <AvaliarCardSubtitle>
@@ -19,8 +20,8 @@ const Avaliar: React.FC = () => {
           </AvaliarCardSubtitle>
           <AvaliarButton>Avaliar uma empresa</AvaliarButton>
         </AvaliarCard>
-      </AvaliarSection>
-    </>
+      </Content>
+    </Container>
   );
 };
 
