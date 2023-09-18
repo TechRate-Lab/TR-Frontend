@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import background from '../../../assets/homeBackground.png'
+import styled from "styled-components";
+import background from "../../../assets/homeBackground.png";
 
 export const Container = styled.section`
   position: relative;
@@ -17,42 +17,50 @@ export const Container = styled.section`
     background-size: cover;
     z-index: -1;
   }
-`
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    margin-top: 20px;
+  }
+`;
 
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 100%;
     padding: 40px 24px;
   }
-`
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column-reverse;
+  }
+`;
 
 export const Call = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: Center;
   gap: 20px;
-  
-  @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 386px;
   }
 
-  @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     width: 550px;
   }
-`
+`;
 
 export const Title = styled.h1`
   color: ${(props) => props.theme.colors.primary.normal};
 
-  font-size: ${props => props.theme.typography.desktop.headline1.fontSize};
-  font-weight: ${(props) => props.theme.typography.desktop.headline1.fontWeight};
-  letter-spacing: ${(props) => props.theme.typography.desktop.headline1.spacing};
+  font-size: ${(props) => props.theme.typography.desktop.headline1.fontSize};
+  font-weight: ${(props) =>
+    props.theme.typography.desktop.headline1.fontWeight};
+  letter-spacing: ${(props) =>
+    props.theme.typography.desktop.headline1.spacing};
   line-height: 100%;
-  
+
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     font-size: 48px;
     font-style: normal;
@@ -65,21 +73,23 @@ export const Title = styled.h1`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     font-size: ${(props) => props.theme.typography.mobile.headline1.fontSize};
     line-height: ${(props) => props.theme.typography.mobile.headline1.height};
+    display: none;
   }
-`
+`;
 
 export const SubTitle = styled.span`
   max-width: 384px;
-  font-weight: ${props => props.theme.typography.mobile.headline7.fontWeight};
-  font-size: ${props => props.theme.typography.mobile.headline7.fontSize};
-  line-height: ${props => props.theme.typography.mobile.headline7.lineHeight};
-  
+  font-weight: ${(props) => props.theme.typography.mobile.headline7.fontWeight};
+  font-size: ${(props) => props.theme.typography.mobile.headline7.fontSize};
+  line-height: ${(props) => props.theme.typography.mobile.headline7.lineHeight};
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 110%;
-    font-weight: ${props => props.theme.typography.tablet.headline1.fontWeight};
-    font-size: ${props => props.theme.typography.tablet.headline1.fontSize};
-    line-height: ${props => props.theme.typography.tablet.headline1.lineHeight};
+    font-weight: ${(props) =>
+      props.theme.typography.tablet.headline1.fontWeight};
+    font-size: ${(props) => props.theme.typography.tablet.headline1.fontSize};
+    line-height: ${(props) =>
+      props.theme.typography.tablet.headline1.lineHeight};
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
@@ -87,22 +97,39 @@ export const SubTitle = styled.span`
     color: ${(props) => props.theme.colors.grey.darker};
     font-size: ${(props) => props.theme.typography.desktop.subtitle1.fontSize};
     line-height: ${(props) => props.theme.typography.desktop.subtitle1.height};
-    font-weight: ${(props) => props.theme.typography.desktop.subtitle1.fontWeight};
+    font-weight: ${(props) =>
+      props.theme.typography.desktop.subtitle1.fontWeight};
   }
-`
-
-export const HeroImage = styled.img`
-  width: 615px;
-  height: 400px;
-  object-fit: cover; 
-  
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    display: block;
-    width: 400px;
-    height: 238px;
-  }  
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     display: none;
   }
-`
+`;
+
+export const MobileSubtitle = styled.span`
+  width: 290px;
+  font-weight: ${(props) => props.theme.typography.mobile.headline1.fontWeight};
+  font-size: ${(props) => props.theme.typography.mobile.headline7.fontSize};
+  line-height: ${(props) => props.theme.typography.mobile.headline7.lineHeight};
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+`;
+
+export const HeroImage = styled.img`
+  width: 615px;
+  height: 400px;
+  object-fit: cover;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    display: block;
+    width: 400px;
+    height: 238px;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 320px;
+    height: 227px;
+  }
+`;

@@ -3,7 +3,7 @@ import React from "react";
 import ButtonGlobal from "../../../components/Buttons/ButtonGlobal";
 import heroImage from "../../../assets/imgHeader.png";
 
-import { Call, SubTitle, Container, HeroImage, Content, Title } from "./styles";
+import { Call, SubTitle, Container, HeroImage, Content, Title, MobileSubtitle } from "./styles";
 
 const HeroSection: React.FC = () => {
   return (
@@ -12,6 +12,7 @@ const HeroSection: React.FC = () => {
         <Call>
           <Title>Take a Peek</Title>
           <SubTitle>Conectando você à empresa ideal!</SubTitle>
+          <MobileSubtitle>Aqui você descobre se o match com aquela empresa é real!</MobileSubtitle>
           <ButtonGlobal
             children="CADASTRE-SE"
             height="72px"
