@@ -63,6 +63,9 @@ const Sobre: React.FC = () => {
             />
           </SobreBoxMainText>
         </SobreBoxMain>
+        <BoxImage
+          src={teamImage} alt="image"
+        />
       </Content>
     </Container>
   );

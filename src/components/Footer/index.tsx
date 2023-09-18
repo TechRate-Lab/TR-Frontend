@@ -1,5 +1,5 @@
 import React from 'react'
-import {
+import { 
   Container,
   FooterContact,
   Content,
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
   return (
     <Container>
       <Content>
-        <NavFooter>
+        <NavFooter> 
           <InfoFooter>
             <FooterLogo src={logo} />
             <FooterContact>

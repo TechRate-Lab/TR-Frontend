@@ -30,7 +30,7 @@ const Reputacao: React.FC = () => {
                 MELHORES AVALIAÇÕES
               </ReputacaoCardTitle>
               <ReputacaoCardListaEmpresas>
-                <ReputacaoCardEmpresa>
+                <ReputacaoCardEmpresa> 
                   <p>1°</p>
                   <img src={empresa1} alt="empresa" />
                   <p>iFood</p>
