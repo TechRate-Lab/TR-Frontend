@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.section`
   position: relative;
   width: 100%;
-`
+`;
 
 export const OverlayBg = styled.div`
   background-color: ${(props) => props.theme.colors.primary.light};
@@ -17,18 +17,18 @@ export const OverlayBg = styled.div`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     display: none;
   }
-`
+`;
 
 export const Content = styled.section`
-display: flex;
-align-items: center;
-justify-content: space-between;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 export const SobreBoxMain = styled.div`
   width: 60%;
   padding: 5rem 7rem;
-  
+
   display: flex;
   background: ${(props) => props.theme.colors.primary.normal};
   border-radius: 0px 0px 100px 0px;
@@ -39,8 +39,10 @@ export const SobreBoxMain = styled.div`
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     padding: 2rem 5rem;
+    width: 100%;
+    padding:2rem 1rem;
   }
-`
+`;
 
 export const SobreBoxMainText = styled.div`
   display: flex;
@@ -48,33 +50,39 @@ export const SobreBoxMainText = styled.div`
   width: 90%;
   gap: 2.5rem;
 
-  button{
+  button {
     margin-top: 1rem;
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 100%;
   }
-`
+`;
 
 export const BoxSecondary = styled.div`
-
   @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    
   }
-`
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
+`;
 
 export const BoxImage = styled.img`
-   width: 550px;
-   height: 450px;
-   position: absolute;
-   top: 15%;
-   right: 8%;
+  width: 550px;
+  height: 450px;
+  position: absolute;
+  top: 15%;
+  right: 8%;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     display: none;
   }
-`
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
+`;
 
 export const SobreBoxMainTitle = styled.h1`
   color: #ffffff;
@@ -86,7 +94,11 @@ export const SobreBoxMainTitle = styled.h1`
   line-height: ${(props) => props.theme.typography.desktop.headline2.height};
   letter-spacing: ${(props) =>
     props.theme.typography.desktop.headline2.spacing};
-`
+    @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}) {
+    font-size: ${(props) => props.theme.typography.desktop.headline4.fontSize};
+
+  }
+`;
 
 export const SobreBoxMainParagraph = styled.p`
   font-family: "Poppins";
@@ -97,7 +109,5 @@ export const SobreBoxMainParagraph = styled.p`
   letter-spacing: ${(props) => props.theme.typography.desktop.body2.spacing};
   color: #ffffff;
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    
-  }
-`
+  
+`;

@@ -8,16 +8,18 @@ import {
   Content,
 } from "./style";
 
-const Avaliar: React.FC = () => {
+const Avaliar: React.FC = () => { 
+
+  const isMobile = window.innerWidth <= 360
   return (
     <Container>
       <Content>
         <AvaliarCard>
           <AvaliarCardTitle>Compartilhe sua experiência</AvaliarCardTitle>
-          <AvaliarCardSubtitle>
+        {!isMobile &&  <AvaliarCardSubtitle>
             Ajude outro profissional a se candidatar com confiança, autonomia e
             clareza.
-          </AvaliarCardSubtitle>
+          </AvaliarCardSubtitle>}
           <AvaliarButton>Avaliar uma empresa</AvaliarButton>
         </AvaliarCard>
       </Content>
