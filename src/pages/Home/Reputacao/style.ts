@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   padding: 3rem 5rem;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 `;
 export const Content = styled.section`
   display: flex;
@@ -32,29 +39,28 @@ export const ReputacaoCard = styled.div`
   max-width: 315px;
   flex-direction: column;
   border-radius: 8px;
-  &.melhores {
-    background: #009c4f;
-    width: 200px;
-  }
+  background: #009c4f;
+  width: 200px;
   &.piores {
     background: ${(props) => props.theme.colors.grey.normal};
     width: 200px;
   }
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     background: ${(props) => props.theme.colors.primary.light};
-    width: 395px;
+    border-radius: 0;
+    width: 100%;
   }
 `;
 
 export const ReputacaoCards = styled.div`
   display: flex;
-  max-width: 393px;
+  max-width: 654px;
   gap: 14px;
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    max-width: 654px;
-  }
- 
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;    
+    height: 15rem;
+  } 
 `;
 
 export const ReputacaoCardTitle = styled.h2`
@@ -66,9 +72,8 @@ export const ReputacaoCardTitle = styled.h2`
   padding: 12px 10px;
   color: #ffffff;
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     max-width: 283px;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -76,7 +81,7 @@ export const ReputacaoCardTitle = styled.h2`
     letter-spacing: 0.15px;
     padding: 16px 20px;
   }
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     font-size: ${(props) => props.theme.typography.desktop.headline6.fontSize};
     max-width: 100%;
   }

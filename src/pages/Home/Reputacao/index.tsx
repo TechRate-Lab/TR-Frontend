@@ -18,12 +18,13 @@ import empresa4 from "../../../assets/logo_shopee.png";
 import empresa5 from "../../../assets/logo_magazine-luiza.png";
 
 const Reputacao: React.FC = () => {
-  const isMobile = window.innerWidth <= 360;
+  const isMobile = window.innerWidth <= 460;
+  console.log(window.innerWidth)
 
   return (
     <Container>
       <Content>
-        {isMobile ? (
+        {/* {isMobile ? (
           <ReputacaoCards>
             <ReputacaoCard className="melhores">
               <ReputacaoCardTitle>
@@ -48,11 +49,11 @@ const Reputacao: React.FC = () => {
               </ReputacaoCardListaEmpresas>
             </ReputacaoCard>
           </ReputacaoCards>
-        ) : (
+        ) : ( */}
           <ReputacaoCards>
             <ReputacaoCard className="melhores">
               <ReputacaoCardTitle>
-                Empresas com melhor avaliação na TechRate
+                {isMobile ? 'MELHORES AVALIAÇÕES' : 'Empresas com melhor avaliação na TechRate'}
               </ReputacaoCardTitle>
               <ReputacaoCardListaEmpresas>
                 <ReputacaoCardEmpresa>
@@ -83,7 +84,7 @@ const Reputacao: React.FC = () => {
               </ReputacaoCardListaEmpresas>
             </ReputacaoCard>
           </ReputacaoCards>
-        )}
+        {/* )} */}
 
         {!isMobile && (
           <ReputacaoCard className="piores">
