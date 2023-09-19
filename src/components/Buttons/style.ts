@@ -20,4 +20,10 @@ export const ButtonEnableSmall = styled.button<ButtonProps>`
   &:hover {
     background-color: ${(props) => props.hoverColor};
   }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 151px;
+    height: 40px;
+    font-size: ${(props) => props.theme.buttons.medium.fontSize};
+  }
 `;

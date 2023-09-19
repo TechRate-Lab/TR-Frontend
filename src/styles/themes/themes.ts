@@ -9,7 +9,7 @@ export const defaultTheme = {
       normal: '#025464',
       normal_hover: '5fd59a',
       normal_active: '#55be89',
-      dark: '#50b280',
+      dark: '#50b280', 
       dark_hover: '#408e67',
       dark_active: '#306b4d',
       darker: '#25533c'
@@ -232,7 +232,7 @@ export const defaultTheme = {
     }
   },
   breakpoints: {
-    mobile: '428px',
+    mobile: '460px',
     tablet: '834px',
     desktop: '1440px'
   }
