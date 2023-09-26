@@ -12,12 +12,12 @@ export const Container = styled.section`
 `;
 export const Content = styled.section`
   display: flex;
-  justify-content: center;
+  width: 100%;
+  
   gap: 4rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column-reverse;
-    align-items: center;
     gap: 1rem;
   }
 `;
@@ -30,25 +30,6 @@ export const ReputacaoText = styled.div`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
   }
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    max-width: 300px;
-  }
-`;
-
-export const ReputacaoCard = styled.div`
-  display: flex;
-  max-width: 315px;
-  flex-direction: column;
-  border-radius: 8px;
-  background: #009c4f;
-  width: 200px;
-  &.piores {
-    background: ${(props) => props.theme.colors.grey.normal};
-    width: 200px;
-  }
-
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    background: ${(props) => props.theme.colors.primary.light};
-    border-radius: 0;
     width: 100%;
   }
 `;
@@ -58,32 +39,52 @@ export const ReputacaoCards = styled.div`
   max-width: 654px;
   gap: 14px;
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    width: 100%;    
-    height: 15rem;
+    width: 100%; 
+    justify-content: center;
+    height: 17.5rem;
   } 
+`;
+
+export const ReputacaoCard = styled.div`
+  display: flex;
+  max-width: 315px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #009c4f;
+  width: 100%;
+  &.piores {
+    background: ${(props) => props.theme.colors.grey.normal};
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    background: ${(props) => props.theme.colors.primary.light};
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+
+    &.piores {
+      display: none;
+    }
+  }
 `;
 
 export const ReputacaoCardTitle = styled.h2`
   font-style: normal;
-  font-weight: ${(props) => props.theme.typography.mobile.headline8.fontWeight};
-  font-size: ${(props) => props.theme.typography.mobile.headline8.fontSize};
-  line-height: ${(props) => props.theme.typography.mobile.headline8.height};
-  max-width: 170px;
-  padding: 12px 10px;
+  font-weight: ${(props) => props.theme.typography.desktop.headline6.fontWeight};
+  font-size: ${(props) => props.theme.typography.desktop.headline6.fontSize};
+  line-height: ${(props) => props.theme.typography.desktop.headline6.height};
+  padding: 1.5rem 1rem;
   color: #ffffff;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    max-width: 283px;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 160%; /* 32px */
     letter-spacing: 0.15px;
-    padding: 16px 20px;
   }
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    font-size: ${(props) => props.theme.typography.desktop.headline6.fontSize};
-    max-width: 100%;
+    font-size: ${(props) => props.theme.typography.mobile.headline7.fontSize};
   }
 `;
 
@@ -92,21 +93,20 @@ export const ReputacaoCardListaEmpresas = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-inline: 10px;
-  padding-bottom: 10px;
-  gap: 15px;
+  gap: 1rem;
+  padding: 1rem;
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    margin-inline: 16px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+    
   }
 `;
 export const ReputacaoCardEmpresa = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 9px;
-  padding: 10px 0 10px 10px;
   width: 100%;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   background: #ffffff;
   border-radius: 6px;
 
@@ -183,7 +183,7 @@ export const ReputacaoTextTitle = styled.h2`
   }
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     font-size: ${(props) => props.theme.typography.mobile.headline2.fontSize};
-    max-width: 80%;
+    width: 100%;
   }
 `;
 
@@ -201,7 +201,7 @@ export const ReputacaoTextSubTitle = styled.p`
   @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}) {
   }
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    max-width: 300px;
+    width: 100%;
     font-size: ${(props) => props.theme.typography.desktop.body2.fontSize};
     font-weight: lighter;
   }
