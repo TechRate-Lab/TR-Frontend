@@ -10,7 +10,7 @@ export const Content = styled.section`
 `;
 
 export const AvaliarCard = styled.div`
-  padding: 5rem 5rem;
+padding: 3rem 5rem;
 
   &::before {
     content: "";
@@ -25,11 +25,14 @@ export const AvaliarCard = styled.div`
     background-size: cover;
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.mobile}) {
-    padding: 2rem 1rem 1rem 1rem;
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 2rem 1rem;
+    &::before {
+    background-image: none;
+  }
   }
 
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
   
   }
 `;
