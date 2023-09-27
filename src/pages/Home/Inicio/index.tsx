@@ -13,12 +13,15 @@ const HeroSection: React.FC = () => {
           <Title>Take a Peek</Title>
           <SubTitle>Conectando você à empresa ideal!</SubTitle>
           <MobileSubtitle>Aqui você descobre se o match com aquela empresa é real!</MobileSubtitle>
+         <a href="/cadastro">
+
           <ButtonGlobal
             children="CADASTRE-SE"
             height="72px"
             width="226px"
             padding="0px"
           />
+         </a>
         </Call>
         <HeroImage src={heroImage} />
       </Content>

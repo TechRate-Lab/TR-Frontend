@@ -16,7 +16,7 @@ export default function CadastroPage(){
                 <CadastroLabel>E-mail</CadastroLabel>
                 <StyledInput/>
                 <StyledSendButton>AVALIAR AGORA</StyledSendButton>
-                <SecondaryButton>VOLTAR PARA O INICIO</SecondaryButton>
+                <SecondaryButton><a href="/">VOLTAR AO INICIO</a></SecondaryButton>
             </StyledForm>
         </CadastroContainer>
         <Footer/>
