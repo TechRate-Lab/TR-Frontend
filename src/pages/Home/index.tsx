@@ -7,7 +7,7 @@ import Reputacao from './Reputacao'
 import Sobre from './Sobre'
 import { Container } from './styles'
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <Container>
       <Header />
@@ -20,4 +20,3 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
