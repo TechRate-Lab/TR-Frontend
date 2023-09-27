@@ -24,69 +24,40 @@ const Reputacao: React.FC = () => {
   return (
     <Container>
       <Content>
-        {/* {isMobile ? (
-          <ReputacaoCards>
-            <ReputacaoCard className="melhores">
-              <ReputacaoCardTitle>
-                MELHORES AVALIAÇÕES
-              </ReputacaoCardTitle>
-              <ReputacaoCardListaEmpresas>
-                <ReputacaoCardEmpresa> 
-                  <p>1°</p>
-                  <img src={empresa1} alt="empresa" />
-                  <p>iFood</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>2°</p>
-                  <img src={empresa2} alt="empresa" />
-                  <p>TIM</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>3°</p>
-                  <img src={empresa3} alt="empresa" />
-                  <p>PerfectPay</p>
-                </ReputacaoCardEmpresa>
-              </ReputacaoCardListaEmpresas>
-            </ReputacaoCard>
-          </ReputacaoCards>
-        ) : ( */}
-          <ReputacaoCards>
-            <ReputacaoCard className="melhores">
-              <ReputacaoCardTitle>
-                {isMobile ? 'MELHORES AVALIAÇÕES' : 'Empresas com melhor avaliação na TechRate'}
-              </ReputacaoCardTitle>
-              <ReputacaoCardListaEmpresas>
-                <ReputacaoCardEmpresa>
-                  <p>1°</p>
-                  <img src={empresa1} alt="empresa" />
-                  <p>iFood</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>2°</p>
-                  <img src={empresa2} alt="empresa" />
-                  <p>TIM</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>3°</p>
-                  <img src={empresa3} alt="empresa" />
-                  <p>PerfectPay</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>4°</p>
-                  <img src={empresa4} alt="empresa" />
-                  <p>Shopee</p>
-                </ReputacaoCardEmpresa>
-                <ReputacaoCardEmpresa>
-                  <p>5°</p>
-                  <img src={empresa5} alt="empresa" />
-                  <p>Magalu</p>
-                </ReputacaoCardEmpresa>
-              </ReputacaoCardListaEmpresas>
-            </ReputacaoCard>
-          </ReputacaoCards>
-        {/* )} */}
+        <ReputacaoCards>
+          <ReputacaoCard className="melhores">
+            <ReputacaoCardTitle>
+              {isMobile ? 'MELHORES AVALIAÇÕES' : 'Empresas com melhor avaliação na TechRate'}
+            </ReputacaoCardTitle>
+            <ReputacaoCardListaEmpresas>
+              <ReputacaoCardEmpresa>
+                <p>1°</p>
+                <img src={empresa1} alt="empresa" />
+                <p>iFood</p>
+              </ReputacaoCardEmpresa>
+              <ReputacaoCardEmpresa>
+                <p>2°</p>
+                <img src={empresa2} alt="empresa" />
+                <p>TIM</p>
+              </ReputacaoCardEmpresa>
+              <ReputacaoCardEmpresa>
+                <p>3°</p>
+                <img src={empresa3} alt="empresa" />
+                <p>PerfectPay</p>
+              </ReputacaoCardEmpresa>
+              <ReputacaoCardEmpresa>
+                <p>4°</p>
+                <img src={empresa4} alt="empresa" />
+                <p>Shopee</p>
+              </ReputacaoCardEmpresa>
+              <ReputacaoCardEmpresa>
+                <p>5°</p>
+                <img src={empresa5} alt="empresa" />
+                <p>Magalu</p>
+              </ReputacaoCardEmpresa>
+            </ReputacaoCardListaEmpresas>
+          </ReputacaoCard>
 
-        {!isMobile && (
           <ReputacaoCard className="piores">
             <ReputacaoCardTitle>
               Empresas com pior avaliação na TechRate
@@ -119,7 +90,7 @@ const Reputacao: React.FC = () => {
               </ReputacaoCardEmpresa>
             </ReputacaoCardListaEmpresas>
           </ReputacaoCard>
-        )}
+        </ReputacaoCards>
 
         <ReputacaoText>
           <ReputacaoTextTitle>

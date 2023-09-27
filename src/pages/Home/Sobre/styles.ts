@@ -28,8 +28,8 @@ export const Content = styled.section`
 export const SobreBoxMain = styled.div`
   width: 60%;
   padding: 5rem 7rem;
-
   display: flex;
+
   background: ${(props) => props.theme.colors.primary.normal};
   border-radius: 0px 0px 100px 0px;
 
@@ -38,9 +38,8 @@ export const SobreBoxMain = styled.div`
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    padding: 2rem 5rem;
     width: 100%;
-    padding:2rem 1rem;
+    padding: 2rem 1rem;
   }
 `;
 

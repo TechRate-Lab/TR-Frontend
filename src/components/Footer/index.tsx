@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
         </NavFooter>
         <FooterMsgContainer>
           <FooterMsg>
-            Copyright 2023 Techrate. Todos os direitos reservados.
+          Copyrigth ©2023 Takeapeek. Todos os direitos reservados.
           </FooterMsg>
         </FooterMsgContainer>
       </Content>
