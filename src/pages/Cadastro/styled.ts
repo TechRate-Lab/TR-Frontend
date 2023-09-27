@@ -50,10 +50,15 @@ export const StyledSendButton = styled.button`
 
 export const SecondaryButton = styled.button`
   background-color: white;
-  color: ${(props) => props.theme.colors.primary.normal};
   border: 1px solid ${(props) => props.theme.colors.primary.normal};
   border-radius: 10px;
   width: 322px;
   height: 40px;
   font-weight:600;
+
+  a{
+    text-decoration:none;
+    color: ${(props) => props.theme.colors.primary.normal};
+
+  }
 `;
