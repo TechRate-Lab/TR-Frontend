@@ -13,3 +13,5 @@ const LoginService = (): ILoginService => {
 
   return { login };
 };
+
+export default LoginService

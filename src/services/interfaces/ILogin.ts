@@ -3,7 +3,6 @@ export interface ILoginService {
 }
 
 export type LoginDTO = {
-  name: string;
   email: string;
   password: string;
 };
