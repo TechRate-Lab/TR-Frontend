@@ -6,6 +6,7 @@ import RegisterService from "../../../services/user/RegisterService";
 const FormRegister = () => {
   const { sendRegister } = RegisterService();
 
+
   const initialValues = {
     name: "",
     email: "",
