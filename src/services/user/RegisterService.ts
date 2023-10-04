@@ -6,7 +6,7 @@ const RegisterService = (): IRegisterService => {
 
     const sendRegister = async (data:RegisterDTO) => {
         try {
-            const response = await api.post('/createUser')
+            const response = await api.post('/createUser', data)
             console.log(response)
         } catch (error) {
             console.log(error)
