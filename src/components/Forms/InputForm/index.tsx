@@ -1,5 +1,5 @@
 import { InputFormProps } from "./props";
-import { Field } from "./styled";
+import { Field, ErrorMsg } from "./styled";
 
 export default function InputForm({
   name,
@@ -18,6 +18,7 @@ export default function InputForm({
         placeholder={placeholder}
         {...rest}
       />
+      <ErrorMsg name={name} component="div" />
     </>
   );
 }
