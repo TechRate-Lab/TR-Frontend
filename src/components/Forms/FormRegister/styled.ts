@@ -1,6 +1,10 @@
 import styled, { keyframes } from "styled-components";
 
-export const StyledSendButton = styled.button`
+interface StyledSendButtonProps {
+  isLoading: boolean;
+}
+
+export const StyledSendButton = styled.button<StyledSendButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
