@@ -12,16 +12,15 @@ const FormRegister = () => {
   const initialValues = {
     name: "",
     email: "",
-    password: "Abc123!@#",
+    password: "",
+    confirmPassword: ""
   };
   const handleSubmit = async (
     values: any,
     { resetForm }: { resetForm: () => void },
   ) => {
     setLoading(true)
-    // await new Promise((resolve) => {
-    //   setTimeout(resolve, 5000)
-    // })
+  
     await sendRegister(values)
     setLoading(false)
     resetForm();
@@ -41,14 +40,13 @@ const FormRegister = () => {
     //   .min(5, 'Sobrenome deve conter ao menos 5 caracteres')
     //   .required('Campo de preenchimento obrigatório'),    
 
-    // senha: Yup.string()
-    //   .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/, 'A senha deve ter o mínimo de 6 caracteres e conter letras maiúsculas, minúsculas, números e símbolos como ! @ # $ % & * =')
-    //   .required('Campo de preenchimento obrigatório'),
+    password: Yup.string()
+      .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/, 'A senha deve ter o mínimo de 6 caracteres e conter letras maiúsculas, minúsculas, números e símbolos como ! @ # $ % & * =')
+      .required('Campo de preenchimento obrigatório'),
 
-    // confirmarSenha: Yup.string()
-    //   .nullable()
-    //   .oneOf([Yup.ref('senha'), null], 'As senhas devem ser idênticas')
-    //   .required('Campo de preenchimento obrigatório'),
+    confirmPassword: Yup.string()
+      .oneOf([Yup.ref('password')], 'As senhas devem ser idênticas')
+      .required('Campo de preenchimento obrigatório')
 
     // termosDeUso: Yup.boolean()
     //   .oneOf([true], 'Você deve concordar com os Termos de Uso para criar uma conta'),
@@ -72,6 +70,10 @@ const FormRegister = () => {
           <Field as={InputForm} type="input" name="name" inputType="text" />
           <CadastroLabel>E-mail</CadastroLabel>
           <Field as={InputForm} type="input" name="email" inputType="email" />
+          <CadastroLabel>Senha</CadastroLabel>
+          <Field as={InputForm} type="input" name="password" inputType="password" />
+          <CadastroLabel>Confirmação de Senha</CadastroLabel>
+          <Field as={InputForm} type="input" name="confirmPassword" inputType="password" />
           <StyledSendButton
             disabled={loading}
             isLoading={loading}
