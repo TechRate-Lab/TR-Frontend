@@ -1,11 +1,10 @@
-import React from 'react'
-import { Footer } from '../../components/Footer'
-import Header from '../../components/Header'
-import Avaliar from './Avaliar'
-import HeroSection from './Inicio'
-import Reputacao from './Reputacao'
-import Sobre from './Sobre'
-import { Container } from './styles'
+import { Footer } from "../../components/Footer";
+import Header from "../../components/Header";
+import Avaliar from "./Avaliar";
+import HeroSection from "./Inicio";
+import Reputacao from "./Reputacao";
+import Sobre from "./Sobre";
+import { Container } from "./styles";
 
 export default function Home() {
   return (
@@ -17,6 +16,5 @@ export default function Home() {
       <Avaliar />
       <Footer />
     </Container>
-  )
+  );
 }
-

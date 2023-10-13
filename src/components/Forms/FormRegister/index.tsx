@@ -9,6 +9,8 @@ import {
   LoadingIndicator,
 } from "./styled";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormRegister = () => {
   const [loading, setLoading] = useState(false);
@@ -39,6 +41,9 @@ const FormRegister = () => {
 
   return (
     <>
+      <ToastContainer
+      />
+
       <FormikProvider value={formik}>
         <Form style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <CadastroLabel>Nome</CadastroLabel>

@@ -8,7 +8,7 @@ const LoginService = (): ILoginService => {
     try {
       const response = await api.post("/login");
       console.log(response);
-      navigate('/genericPage')
+      navigate("/genericPage");
     } catch (error) {
       console.log(error);
     }
